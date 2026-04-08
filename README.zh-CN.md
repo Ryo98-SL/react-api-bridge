@@ -3,7 +3,7 @@
 > **语言版本**: [English](./README.md) | [简体中文](#)
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Ryo98-SL/react-api-bridge/master/logo/react-api-bridge-logo.png" alt="react-api-bridge logo" width="200">
+  <img src="https://raw.githubusercontent.com/Ryo98-SL/react-api-bridge/master/logo/react-api-bridge-logo.svg" alt="react-api-bridge logo" width="200">
 </p>
 
 React 的作用域命令式 API 桥。

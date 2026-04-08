@@ -3,7 +3,7 @@
 > **Language**: [English](#) | [简体中文](./README.zh-CN.md)
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Ryo98-SL/react-api-bridge/master/logo/react-api-bridge-logo.png" alt="react-api-bridge logo" width="200">
+  <img src="https://raw.githubusercontent.com/Ryo98-SL/react-api-bridge/master/logo/react-api-bridge-logo.svg" alt="react-api-bridge logo" width="200">
 </p>
 
 Scoped imperative APIs for React.
