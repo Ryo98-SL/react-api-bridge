@@ -1,5 +1,5 @@
 TN:
-SF:dist\es\bridge.js
+SF:dist/es/bridge.js
 FN:2,(anonymous_0)
 FN:5,(anonymous_1)
 FNF:2
@@ -19,7 +19,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:dist\es\index.js
+SF:dist/es/index.js
 FNF:0
 FNH:0
 LF:0
@@ -28,7 +28,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:dist\es\core\genOutput.js
+SF:dist/es/core/genOutput.js
 FN:2,genOutput
 FNF:1
 FNH:1
@@ -48,7 +48,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:dist\es\core\getApiDesc.js
+SF:dist/es/core/getApiDesc.js
 FN:3,(anonymous_0)
 FNF:1
 FNH:1
@@ -71,7 +71,7 @@ BRF:4
 BRH:3
 end_of_record
 TN:
-SF:dist\es\core\getIsMulti.js
+SF:dist/es/core/getIsMulti.js
 FN:1,(anonymous_0)
 FNF:1
 FNH:1
@@ -84,7 +84,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:dist\es\core\getResolverOrCreateWhenMissing.js
+SF:dist/es/core/getResolverOrCreateWhenMissing.js
 FN:1,getResolverOrCreateWhenMissing
 FN:2,(anonymous_1)
 FN:5,(anonymous_2)
@@ -130,7 +130,7 @@ BRF:8
 BRH:4
 end_of_record
 TN:
-SF:dist\es\core\getUpperApiDesc.js
+SF:dist/es/core/getUpperApiDesc.js
 FN:3,getUpperApiDesc
 FNF:1
 FNH:0
@@ -148,7 +148,7 @@ BRF:4
 BRH:0
 end_of_record
 TN:
-SF:dist\es\core\getUpperContextValue.js
+SF:dist/es/core/getUpperContextValue.js
 FN:1,getUpperContextValue
 FN:7,(anonymous_1)
 FNF:2
@@ -180,7 +180,7 @@ BRF:6
 BRH:0
 end_of_record
 TN:
-SF:dist\es\core\index.js
+SF:dist/es/core/index.js
 FNF:0
 FNH:0
 LF:0
@@ -189,7 +189,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:dist\es\core\mountHookInitEffect.js
+SF:dist/es/core/mountHookInitEffect.js
 FN:4,mountHookInitEffect
 FN:13,(anonymous_1)
 FN:21,(anonymous_2)
@@ -252,7 +252,7 @@ BRF:18
 BRH:7
 end_of_record
 TN:
-SF:dist\es\core\useFinalContextValue.js
+SF:dist/es/core/useFinalContextValue.js
 FN:2,(anonymous_0)
 FNF:1
 FNH:1
@@ -271,7 +271,7 @@ BRF:4
 BRH:4
 end_of_record
 TN:
-SF:dist\es\core\useInitEffect.js
+SF:dist/es/core/useInitEffect.js
 FN:6,useInitEffect
 FN:8,(anonymous_1)
 FN:12,(anonymous_2)
@@ -320,7 +320,7 @@ BRF:6
 BRH:5
 end_of_record
 TN:
-SF:dist\es\features\index.js
+SF:dist/es/features/index.js
 FNF:0
 FNH:0
 LF:0
@@ -329,7 +329,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:dist\es\features\components\Boundary.js
+SF:dist/es/features/components/Boundary.js
 FN:3,createBoundary
 FN:4,(anonymous_1)
 FN:5,(anonymous_2)
@@ -374,7 +374,7 @@ BRF:8
 BRH:0
 end_of_record
 TN:
-SF:dist\es\features\hooks\useAPI.js
+SF:dist/es/features/hooks/useAPI.js
 FN:2,useAPI
 FNF:1
 FNH:1
@@ -392,7 +392,7 @@ BRF:2
 BRH:2
 end_of_record
 TN:
-SF:dist\es\features\hooks\useBoundaryContext.js
+SF:dist/es/features/hooks/useBoundaryContext.js
 FN:2,useBoundaryContext
 FN:5,(anonymous_1)
 FNF:2
@@ -409,7 +409,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:dist\es\features\hooks\useBoundaryPayload.js
+SF:dist/es/features/hooks/useBoundaryPayload.js
 FN:2,useBoundaryPayload
 FNF:1
 FNH:0
@@ -422,7 +422,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:dist\es\features\hooks\useBridgeRef.js
+SF:dist/es/features/hooks/useBridgeRef.js
 FN:2,useBoundaryRef
 FNF:1
 FNH:0
@@ -434,7 +434,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:dist\es\features\hooks\useRegister.js
+SF:dist/es/features/hooks/useRegister.js
 FN:6,useRegister
 FN:9,(anonymous_1)
 FN:11,(anonymous_2)
@@ -487,7 +487,7 @@ BRF:2
 BRH:1
 end_of_record
 TN:
-SF:dist\es\features\hooks\useTools.js
+SF:dist/es/features/hooks/useTools.js
 FN:3,useTools
 FN:5,(anonymous_1)
 FN:8,(anonymous_2)
@@ -537,7 +537,7 @@ BRF:12
 BRH:0
 end_of_record
 TN:
-SF:dist\es\features\hooks\useUpperAPI.js
+SF:dist/es/features/hooks/useUpperAPI.js
 FN:3,useUpperAPI
 FN:8,(anonymous_1)
 FNF:2
@@ -561,7 +561,7 @@ BRF:4
 BRH:0
 end_of_record
 TN:
-SF:dist\es\features\hooks\useUpperBoundaryPayload.js
+SF:dist/es/features/hooks/useUpperBoundaryPayload.js
 FN:3,useUpperBoundaryPayload
 FN:6,(anonymous_1)
 FNF:2
@@ -581,7 +581,7 @@ BRF:2
 BRH:0
 end_of_record
 TN:
-SF:dist\es\features\methods\getBridgeAPI.js
+SF:dist/es/features/methods/getBridgeAPI.js
 FN:2,getBridgeAPI
 FNF:1
 FNH:1
@@ -596,7 +596,7 @@ BRF:2
 BRH:2
 end_of_record
 TN:
-SF:dist\es\features\methods\getBridgeAPIAsync.js
+SF:dist/es/features/methods/getBridgeAPIAsync.js
 FN:2,getBridgeAPIAsync
 FNF:1
 FNH:0
@@ -611,7 +611,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:dist\es\utils\appendToMappedValue.js
+SF:dist/es/utils/appendToMappedValue.js
 FN:2,appendToMappedValue
 FN:10,(anonymous_1)
 FNF:2
@@ -637,7 +637,7 @@ BRF:4
 BRH:2
 end_of_record
 TN:
-SF:dist\es\utils\genHookId.js
+SF:dist/es/utils/genHookId.js
 FN:3,(anonymous_0)
 FNF:1
 FNH:1
@@ -658,7 +658,7 @@ BRF:2
 BRH:1
 end_of_record
 TN:
-SF:dist\es\utils\removeArrayElement.js
+SF:dist/es/utils/removeArrayElement.js
 FN:1,(anonymous_0)
 FN:3,(anonymous_1)
 FNF:2
@@ -680,7 +680,7 @@ BRF:4
 BRH:4
 end_of_record
 TN:
-SF:dist\es\utils\tryInvoke.js
+SF:dist/es/utils/tryInvoke.js
 FN:1,tryInvoke
 FNF:1
 FNH:1
@@ -697,7 +697,7 @@ BRF:2
 BRH:2
 end_of_record
 TN:
-SF:dist\es\utils\useHookId.js
+SF:dist/es/utils/useHookId.js
 FN:3,useHookId
 FN:4,(anonymous_1)
 FNF:2
@@ -714,7 +714,7 @@ BRF:2
 BRH:1
 end_of_record
 TN:
-SF:dist\es\utils\useUniqueElementRef.js
+SF:dist/es/utils/useUniqueElementRef.js
 FN:3,useUniqueElementRef
 FN:5,(anonymous_1)
 FN:9,(anonymous_2)
@@ -740,7 +740,7 @@ BRF:4
 BRH:2
 end_of_record
 TN:
-SF:dist\lib\bridge.js
+SF:dist/lib/bridge.js
 FN:6,(anonymous_0)
 FN:10,(anonymous_1)
 FN:14,(anonymous_2)
@@ -800,7 +800,7 @@ BRF:11
 BRH:8
 end_of_record
 TN:
-SF:dist\lib\index.js
+SF:dist/lib/index.js
 FN:8,(anonymous_0)
 FN:12,(anonymous_1)
 FN:16,(anonymous_2)
@@ -867,7 +867,7 @@ BRF:20
 BRH:16
 end_of_record
 TN:
-SF:dist\lib\core\genOutput.js
+SF:dist/lib/core/genOutput.js
 FN:6,(anonymous_0)
 FN:10,(anonymous_1)
 FN:14,(anonymous_2)
@@ -927,7 +927,7 @@ BRF:11
 BRH:8
 end_of_record
 TN:
-SF:dist\lib\core\getApiDesc.js
+SF:dist/lib/core/getApiDesc.js
 FN:6,(anonymous_0)
 FN:10,(anonymous_1)
 FN:14,(anonymous_2)
@@ -991,7 +991,7 @@ BRF:15
 BRH:12
 end_of_record
 TN:
-SF:dist\lib\core\getIsMulti.js
+SF:dist/lib/core/getIsMulti.js
 FN:6,(anonymous_0)
 FN:10,(anonymous_1)
 FN:14,(anonymous_2)
@@ -1043,7 +1043,7 @@ BRF:11
 BRH:8
 end_of_record
 TN:
-SF:dist\lib\core\getResolverOrCreateWhenMissing.js
+SF:dist/lib/core/getResolverOrCreateWhenMissing.js
 FN:6,(anonymous_0)
 FN:10,(anonymous_1)
 FN:14,(anonymous_2)
@@ -1128,7 +1128,7 @@ BRF:19
 BRH:16
 end_of_record
 TN:
-SF:dist\lib\core\getUpperApiDesc.js
+SF:dist/lib/core/getUpperApiDesc.js
 FN:6,(anonymous_0)
 FN:10,(anonymous_1)
 FN:14,(anonymous_2)
@@ -1187,7 +1187,7 @@ BRF:15
 BRH:12
 end_of_record
 TN:
-SF:dist\lib\core\getUpperContextValue.js
+SF:dist/lib/core/getUpperContextValue.js
 FN:6,(anonymous_0)
 FN:10,(anonymous_1)
 FN:14,(anonymous_2)
@@ -1258,7 +1258,7 @@ BRF:17
 BRH:14
 end_of_record
 TN:
-SF:dist\lib\core\index.js
+SF:dist/lib/core/index.js
 FN:6,(anonymous_0)
 FN:10,(anonymous_1)
 FN:14,(anonymous_2)
@@ -1339,7 +1339,7 @@ BRF:11
 BRH:8
 end_of_record
 TN:
-SF:dist\lib\core\mountHookInitEffect.js
+SF:dist/lib/core/mountHookInitEffect.js
 FN:6,(anonymous_0)
 FN:10,(anonymous_1)
 FN:14,(anonymous_2)
@@ -1444,7 +1444,7 @@ BRF:29
 BRH:23
 end_of_record
 TN:
-SF:dist\lib\core\useFinalContextValue.js
+SF:dist/lib/core/useFinalContextValue.js
 FN:6,(anonymous_0)
 FN:10,(anonymous_1)
 FN:14,(anonymous_2)
@@ -1503,7 +1503,7 @@ BRF:15
 BRH:12
 end_of_record
 TN:
-SF:dist\lib\core\useInitEffect.js
+SF:dist/lib/core/useInitEffect.js
 FN:6,(anonymous_0)
 FN:10,(anonymous_1)
 FN:14,(anonymous_2)
@@ -1596,7 +1596,7 @@ BRF:17
 BRH:14
 end_of_record
 TN:
-SF:dist\lib\features\index.js
+SF:dist/lib/features/index.js
 FN:8,(anonymous_0)
 FN:12,(anonymous_1)
 FN:16,(anonymous_2)
@@ -1697,7 +1697,7 @@ BRF:18
 BRH:13
 end_of_record
 TN:
-SF:dist\lib\features\components\Boundary.js
+SF:dist/lib/features/components/Boundary.js
 FN:8,(anonymous_0)
 FN:12,(anonymous_1)
 FN:16,(anonymous_2)
@@ -1795,7 +1795,7 @@ BRF:26
 BRH:21
 end_of_record
 TN:
-SF:dist\lib\features\hooks\useAPI.js
+SF:dist/lib/features/hooks/useAPI.js
 FN:6,(anonymous_0)
 FN:10,(anonymous_1)
 FN:14,(anonymous_2)
@@ -1853,7 +1853,7 @@ BRF:13
 BRH:10
 end_of_record
 TN:
-SF:dist\lib\features\hooks\useBoundaryContext.js
+SF:dist/lib/features/hooks/useBoundaryContext.js
 FN:6,(anonymous_0)
 FN:10,(anonymous_1)
 FN:14,(anonymous_2)
@@ -1910,7 +1910,7 @@ BRF:11
 BRH:8
 end_of_record
 TN:
-SF:dist\lib\features\hooks\useBoundaryPayload.js
+SF:dist/lib/features/hooks/useBoundaryPayload.js
 FN:6,(anonymous_0)
 FN:10,(anonymous_1)
 FN:14,(anonymous_2)
@@ -1963,7 +1963,7 @@ BRF:11
 BRH:8
 end_of_record
 TN:
-SF:dist\lib\features\hooks\useBridgeRef.js
+SF:dist/lib/features/hooks/useBridgeRef.js
 FN:6,(anonymous_0)
 FN:10,(anonymous_1)
 FN:14,(anonymous_2)
@@ -2015,7 +2015,7 @@ BRF:11
 BRH:8
 end_of_record
 TN:
-SF:dist\lib\features\hooks\useRegister.js
+SF:dist/lib/features/hooks/useRegister.js
 FN:6,(anonymous_0)
 FN:10,(anonymous_1)
 FN:14,(anonymous_2)
@@ -2112,7 +2112,7 @@ BRF:13
 BRH:10
 end_of_record
 TN:
-SF:dist\lib\features\hooks\useTools.js
+SF:dist/lib/features/hooks/useTools.js
 FN:6,(anonymous_0)
 FN:10,(anonymous_1)
 FN:14,(anonymous_2)
@@ -2203,7 +2203,7 @@ BRF:23
 BRH:14
 end_of_record
 TN:
-SF:dist\lib\features\hooks\useUpperAPI.js
+SF:dist/lib/features/hooks/useUpperAPI.js
 FN:6,(anonymous_0)
 FN:10,(anonymous_1)
 FN:14,(anonymous_2)
@@ -2268,7 +2268,7 @@ BRF:15
 BRH:11
 end_of_record
 TN:
-SF:dist\lib\features\hooks\useUpperBoundaryPayload.js
+SF:dist/lib/features/hooks/useUpperBoundaryPayload.js
 FN:6,(anonymous_0)
 FN:10,(anonymous_1)
 FN:14,(anonymous_2)
@@ -2329,7 +2329,7 @@ BRF:13
 BRH:10
 end_of_record
 TN:
-SF:dist\lib\features\methods\getBridgeAPI.js
+SF:dist/lib/features/methods/getBridgeAPI.js
 FN:6,(anonymous_0)
 FN:10,(anonymous_1)
 FN:14,(anonymous_2)
@@ -2384,7 +2384,7 @@ BRF:13
 BRH:8
 end_of_record
 TN:
-SF:dist\lib\features\methods\getBridgeAPIAsync.js
+SF:dist/lib/features/methods/getBridgeAPIAsync.js
 FN:6,(anonymous_0)
 FN:10,(anonymous_1)
 FN:14,(anonymous_2)
@@ -2439,7 +2439,7 @@ BRF:11
 BRH:8
 end_of_record
 TN:
-SF:dist\lib\utils\appendToMappedValue.js
+SF:dist/lib/utils/appendToMappedValue.js
 FN:6,(anonymous_0)
 FN:10,(anonymous_1)
 FN:14,(anonymous_2)
@@ -2505,7 +2505,7 @@ BRF:15
 BRH:12
 end_of_record
 TN:
-SF:dist\lib\utils\genHookId.js
+SF:dist/lib/utils/genHookId.js
 FN:6,(anonymous_0)
 FN:10,(anonymous_1)
 FN:14,(anonymous_2)
@@ -2565,7 +2565,7 @@ BRF:13
 BRH:9
 end_of_record
 TN:
-SF:dist\lib\utils\removeArrayElement.js
+SF:dist/lib/utils/removeArrayElement.js
 FN:6,(anonymous_0)
 FN:10,(anonymous_1)
 FN:14,(anonymous_2)
@@ -2626,7 +2626,7 @@ BRF:15
 BRH:12
 end_of_record
 TN:
-SF:dist\lib\utils\tryInvoke.js
+SF:dist/lib/utils/tryInvoke.js
 FN:6,(anonymous_0)
 FN:10,(anonymous_1)
 FN:14,(anonymous_2)
@@ -2682,7 +2682,7 @@ BRF:13
 BRH:10
 end_of_record
 TN:
-SF:dist\lib\utils\useHookId.js
+SF:dist/lib/utils/useHookId.js
 FN:6,(anonymous_0)
 FN:10,(anonymous_1)
 FN:14,(anonymous_2)
@@ -2740,7 +2740,7 @@ BRF:13
 BRH:9
 end_of_record
 TN:
-SF:dist\lib\utils\useUniqueElementRef.js
+SF:dist/lib/utils/useUniqueElementRef.js
 FN:6,(anonymous_0)
 FN:10,(anonymous_1)
 FN:14,(anonymous_2)
@@ -2807,7 +2807,7 @@ BRF:15
 BRH:12
 end_of_record
 TN:
-SF:src\utils\appendToMappedValue.ts
+SF:src/utils/appendToMappedValue.ts
 FN:3,appendToMappedValue
 FN:12,(anonymous_1)
 FNF:2
@@ -2833,7 +2833,7 @@ BRF:4
 BRH:4
 end_of_record
 TN:
-SF:src\utils\removeArrayElement.ts
+SF:src/utils/removeArrayElement.ts
 FN:1,(anonymous_0)
 FN:3,(anonymous_1)
 FNF:2
@@ -2855,7 +2855,7 @@ BRF:4
 BRH:3
 end_of_record
 TN:
-SF:src\utils\tryInvoke.ts
+SF:src/utils/tryInvoke.ts
 FN:1,tryInvoke
 FNF:1
 FNH:1
@@ -2872,7 +2872,7 @@ BRF:2
 BRH:2
 end_of_record
 TN:
-SF:web-server-dev\examples\example-async.tsx
+SF:web-server-dev/examples/example-async.tsx
 FN:5,ExampleAsync
 FN:8,(anonymous_1)
 FN:9,(anonymous_2)
@@ -2956,7 +2956,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:web-server-dev\examples\example-multiple.tsx
+SF:web-server-dev/examples/example-multiple.tsx
 FN:8,ExampleMultiple
 FN:23,(anonymous_1)
 FN:25,(anonymous_2)
@@ -3147,7 +3147,7 @@ BRF:12
 BRH:10
 end_of_record
 TN:
-SF:web-server-dev\examples\example-nested.tsx
+SF:web-server-dev/examples/example-nested.tsx
 FN:8,ExampleNested
 FN:13,(anonymous_1)
 FN:14,(anonymous_2)
@@ -3345,7 +3345,7 @@ BRF:10
 BRH:8
 end_of_record
 TN:
-SF:web-server-dev\examples\example-tree.tsx
+SF:web-server-dev/examples/example-tree.tsx
 FN:18,ExampleTree
 FN:44,(anonymous_1)
 FN:65,TreeNode
@@ -3515,7 +3515,7 @@ BRF:38
 BRH:33
 end_of_record
 TN:
-SF:web-server-dev\examples\example1.tsx
+SF:web-server-dev/examples/example1.tsx
 FN:5,Example1
 FN:8,(anonymous_1)
 FN:19,(anonymous_2)

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1753639494812" clover="3.2.0">
-  <project timestamp="1753639494812" name="All files">
+<coverage generated="1775689796740" clover="3.2.0">
+  <project timestamp="1775689796740" name="All files">
     <metrics statements="1419" coveredstatements="1288" conditionals="633" coveredconditionals="452" methods="477" coveredmethods="410" elements="2529" coveredelements="2150" complexity="0" loc="1419" ncloc="1419" packages="16" files="68" classes="68"/>
     <package name="dist.es">
       <metrics statements="7" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
-      <file name="bridge.js" path="D:\projects\TypeScript-Babel-Starter-master\dist\es\bridge.js">
+      <file name="bridge.js" path="/Users/shudeliang/projects/react-api-bridge/dist/es/bridge.js">
         <metrics statements="7" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -14,13 +14,13 @@
         <line num="8" count="1" type="stmt"/>
         <line num="10" count="1" type="stmt"/>
       </file>
-      <file name="index.js" path="D:\projects\TypeScript-Babel-Starter-master\dist\es\index.js">
+      <file name="index.js" path="/Users/shudeliang/projects/react-api-bridge/dist/es/index.js">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
     </package>
     <package name="dist.es.core">
       <metrics statements="100" coveredstatements="66" conditionals="50" coveredconditionals="23" methods="26" coveredmethods="17"/>
-      <file name="genOutput.js" path="D:\projects\TypeScript-Babel-Starter-master\dist\es\core\genOutput.js">
+      <file name="genOutput.js" path="/Users/shudeliang/projects/react-api-bridge/dist/es/core/genOutput.js">
         <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="3" count="1" type="stmt"/>
         <line num="8" count="1" type="stmt"/>
@@ -32,7 +32,7 @@
         <line num="21" count="1" type="stmt"/>
         <line num="22" count="1" type="stmt"/>
       </file>
-      <file name="getApiDesc.js" path="D:\projects\TypeScript-Babel-Starter-master\dist\es\core\getApiDesc.js">
+      <file name="getApiDesc.js" path="/Users/shudeliang/projects/react-api-bridge/dist/es/core/getApiDesc.js">
         <metrics statements="8" coveredstatements="8" conditionals="4" coveredconditionals="3" methods="1" coveredmethods="1"/>
         <line num="3" count="1" type="stmt"/>
         <line num="4" count="10" type="stmt"/>
@@ -43,12 +43,12 @@
         <line num="9" count="3" type="stmt"/>
         <line num="14" count="10" type="stmt"/>
       </file>
-      <file name="getIsMulti.js" path="D:\projects\TypeScript-Babel-Starter-master\dist\es\core\getIsMulti.js">
+      <file name="getIsMulti.js" path="/Users/shudeliang/projects/react-api-bridge/dist/es/core/getIsMulti.js">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="14" type="stmt"/>
       </file>
-      <file name="getResolverOrCreateWhenMissing.js" path="D:\projects\TypeScript-Babel-Starter-master\dist\es\core\getResolverOrCreateWhenMissing.js">
+      <file name="getResolverOrCreateWhenMissing.js" path="/Users/shudeliang/projects/react-api-bridge/dist/es/core/getResolverOrCreateWhenMissing.js">
         <metrics statements="19" coveredstatements="19" conditionals="8" coveredconditionals="4" methods="5" coveredmethods="4"/>
         <line num="2" count="3" type="stmt"/>
         <line num="3" count="3" type="stmt"/>
@@ -70,13 +70,13 @@
         <line num="29" count="3" type="stmt"/>
         <line num="31" count="3" type="stmt"/>
       </file>
-      <file name="getUpperApiDesc.js" path="D:\projects\TypeScript-Babel-Starter-master\dist\es\core\getUpperApiDesc.js">
+      <file name="getUpperApiDesc.js" path="/Users/shudeliang/projects/react-api-bridge/dist/es/core/getUpperApiDesc.js">
         <metrics statements="3" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="4" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="5" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="6" count="0" type="stmt"/>
       </file>
-      <file name="getUpperContextValue.js" path="D:\projects\TypeScript-Babel-Starter-master\dist\es\core\getUpperContextValue.js">
+      <file name="getUpperContextValue.js" path="/Users/shudeliang/projects/react-api-bridge/dist/es/core/getUpperContextValue.js">
         <metrics statements="13" coveredstatements="0" conditionals="6" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <line num="2" count="0" type="stmt"/>
         <line num="3" count="0" type="stmt"/>
@@ -92,10 +92,10 @@
         <line num="17" count="0" type="stmt"/>
         <line num="19" count="0" type="stmt"/>
       </file>
-      <file name="index.js" path="D:\projects\TypeScript-Babel-Starter-master\dist\es\core\index.js">
+      <file name="index.js" path="/Users/shudeliang/projects/react-api-bridge/dist/es/core/index.js">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
-      <file name="mountHookInitEffect.js" path="D:\projects\TypeScript-Babel-Starter-master\dist\es\core\mountHookInitEffect.js">
+      <file name="mountHookInitEffect.js" path="/Users/shudeliang/projects/react-api-bridge/dist/es/core/mountHookInitEffect.js">
         <metrics statements="24" coveredstatements="6" conditionals="18" coveredconditionals="7" methods="6" coveredmethods="1"/>
         <line num="5" count="1" type="cond" truecount="1" falsecount="1"/>
         <line num="6" count="1" type="cond" truecount="2" falsecount="0"/>
@@ -122,14 +122,14 @@
         <line num="37" count="0" type="stmt"/>
         <line num="38" count="0" type="stmt"/>
       </file>
-      <file name="useFinalContextValue.js" path="D:\projects\TypeScript-Babel-Starter-master\dist\es\core\useFinalContextValue.js">
+      <file name="useFinalContextValue.js" path="/Users/shudeliang/projects/react-api-bridge/dist/es/core/useFinalContextValue.js">
         <metrics statements="4" coveredstatements="4" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="16" type="cond" truecount="2" falsecount="0"/>
         <line num="4" count="16" type="stmt"/>
         <line num="5" count="16" type="cond" truecount="2" falsecount="0"/>
       </file>
-      <file name="useInitEffect.js" path="D:\projects\TypeScript-Babel-Starter-master\dist\es\core\useInitEffect.js">
+      <file name="useInitEffect.js" path="/Users/shudeliang/projects/react-api-bridge/dist/es/core/useInitEffect.js">
         <metrics statements="18" coveredstatements="18" conditionals="6" coveredconditionals="5" methods="8" coveredmethods="8"/>
         <line num="7" count="5" type="stmt"/>
         <line num="8" count="5" type="stmt"/>
@@ -153,13 +153,13 @@
     </package>
     <package name="dist.es.features">
       <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="index.js" path="D:\projects\TypeScript-Babel-Starter-master\dist\es\features\index.js">
+      <file name="index.js" path="/Users/shudeliang/projects/react-api-bridge/dist/es/features/index.js">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
     </package>
     <package name="dist.es.features.components">
       <metrics statements="16" coveredstatements="0" conditionals="8" coveredconditionals="0" methods="6" coveredmethods="0"/>
-      <file name="Boundary.js" path="D:\projects\TypeScript-Babel-Starter-master\dist\es\features\components\Boundary.js">
+      <file name="Boundary.js" path="/Users/shudeliang/projects/react-api-bridge/dist/es/features/components/Boundary.js">
         <metrics statements="16" coveredstatements="0" conditionals="8" coveredconditionals="0" methods="6" coveredmethods="0"/>
         <line num="4" count="0" type="stmt"/>
         <line num="5" count="0" type="stmt"/>
@@ -181,7 +181,7 @@
     </package>
     <package name="dist.es.features.hooks">
       <metrics statements="67" coveredstatements="36" conditionals="22" coveredconditionals="3" methods="23" coveredmethods="10"/>
-      <file name="useAPI.js" path="D:\projects\TypeScript-Babel-Starter-master\dist\es\features\hooks\useAPI.js">
+      <file name="useAPI.js" path="/Users/shudeliang/projects/react-api-bridge/dist/es/features/hooks/useAPI.js">
         <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
         <line num="3" count="5" type="cond" truecount="2" falsecount="0"/>
         <line num="4" count="5" type="stmt"/>
@@ -189,23 +189,23 @@
         <line num="6" count="5" type="stmt"/>
         <line num="7" count="5" type="stmt"/>
       </file>
-      <file name="useBoundaryContext.js" path="D:\projects\TypeScript-Babel-Starter-master\dist\es\features\hooks\useBoundaryContext.js">
+      <file name="useBoundaryContext.js" path="/Users/shudeliang/projects/react-api-bridge/dist/es/features/hooks/useBoundaryContext.js">
         <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <line num="3" count="0" type="stmt"/>
         <line num="4" count="0" type="stmt"/>
         <line num="5" count="0" type="stmt"/>
         <line num="6" count="0" type="stmt"/>
       </file>
-      <file name="useBoundaryPayload.js" path="D:\projects\TypeScript-Babel-Starter-master\dist\es\features\hooks\useBoundaryPayload.js">
+      <file name="useBoundaryPayload.js" path="/Users/shudeliang/projects/react-api-bridge/dist/es/features/hooks/useBoundaryPayload.js">
         <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="3" count="0" type="stmt"/>
         <line num="4" count="0" type="stmt"/>
       </file>
-      <file name="useBridgeRef.js" path="D:\projects\TypeScript-Babel-Starter-master\dist\es\features\hooks\useBridgeRef.js">
+      <file name="useBridgeRef.js" path="/Users/shudeliang/projects/react-api-bridge/dist/es/features/hooks/useBridgeRef.js">
         <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="3" count="0" type="stmt"/>
       </file>
-      <file name="useRegister.js" path="D:\projects\TypeScript-Babel-Starter-master\dist\es\features\hooks\useRegister.js">
+      <file name="useRegister.js" path="/Users/shudeliang/projects/react-api-bridge/dist/es/features/hooks/useRegister.js">
         <metrics statements="26" coveredstatements="24" conditionals="2" coveredconditionals="1" methods="8" coveredmethods="8"/>
         <line num="7" count="10" type="stmt"/>
         <line num="8" count="10" type="stmt"/>
@@ -234,7 +234,7 @@
         <line num="40" count="3" type="stmt"/>
         <line num="41" count="3" type="stmt"/>
       </file>
-      <file name="useTools.js" path="D:\projects\TypeScript-Babel-Starter-master\dist\es\features\hooks\useTools.js">
+      <file name="useTools.js" path="/Users/shudeliang/projects/react-api-bridge/dist/es/features/hooks/useTools.js">
         <metrics statements="17" coveredstatements="7" conditionals="12" coveredconditionals="0" methods="6" coveredmethods="1"/>
         <line num="4" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
@@ -254,7 +254,7 @@
         <line num="26" count="0" type="stmt"/>
         <line num="28" count="1" type="stmt"/>
       </file>
-      <file name="useUpperAPI.js" path="D:\projects\TypeScript-Babel-Starter-master\dist\es\features\hooks\useUpperAPI.js">
+      <file name="useUpperAPI.js" path="/Users/shudeliang/projects/react-api-bridge/dist/es/features/hooks/useUpperAPI.js">
         <metrics statements="7" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <line num="6" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="7" count="0" type="stmt"/>
@@ -264,7 +264,7 @@
         <line num="12" count="0" type="stmt"/>
         <line num="13" count="0" type="stmt"/>
       </file>
-      <file name="useUpperBoundaryPayload.js" path="D:\projects\TypeScript-Babel-Starter-master\dist\es\features\hooks\useUpperBoundaryPayload.js">
+      <file name="useUpperBoundaryPayload.js" path="/Users/shudeliang/projects/react-api-bridge/dist/es/features/hooks/useUpperBoundaryPayload.js">
         <metrics statements="5" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <line num="4" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="5" count="0" type="stmt"/>
@@ -275,12 +275,12 @@
     </package>
     <package name="dist.es.features.methods">
       <metrics statements="6" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="1"/>
-      <file name="getBridgeAPI.js" path="D:\projects\TypeScript-Babel-Starter-master\dist\es\features\methods\getBridgeAPI.js">
+      <file name="getBridgeAPI.js" path="/Users/shudeliang/projects/react-api-bridge/dist/es/features/methods/getBridgeAPI.js">
         <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
         <line num="3" count="2" type="cond" truecount="2" falsecount="0"/>
         <line num="4" count="2" type="stmt"/>
       </file>
-      <file name="getBridgeAPIAsync.js" path="D:\projects\TypeScript-Babel-Starter-master\dist\es\features\methods\getBridgeAPIAsync.js">
+      <file name="getBridgeAPIAsync.js" path="/Users/shudeliang/projects/react-api-bridge/dist/es/features/methods/getBridgeAPIAsync.js">
         <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="3" count="0" type="stmt"/>
         <line num="8" count="0" type="stmt"/>
@@ -290,7 +290,7 @@
     </package>
     <package name="dist.es.utils">
       <metrics statements="35" coveredstatements="31" conditionals="18" coveredconditionals="12" methods="11" coveredmethods="11"/>
-      <file name="appendToMappedValue.js" path="D:\projects\TypeScript-Babel-Starter-master\dist\es\utils\appendToMappedValue.js">
+      <file name="appendToMappedValue.js" path="/Users/shudeliang/projects/react-api-bridge/dist/es/utils/appendToMappedValue.js">
         <metrics statements="9" coveredstatements="8" conditionals="4" coveredconditionals="2" methods="2" coveredmethods="2"/>
         <line num="3" count="2" type="stmt"/>
         <line num="4" count="2" type="cond" truecount="1" falsecount="1"/>
@@ -302,7 +302,7 @@
         <line num="12" count="2" type="cond" truecount="1" falsecount="1"/>
         <line num="13" count="2" type="stmt"/>
       </file>
-      <file name="genHookId.js" path="D:\projects\TypeScript-Babel-Starter-master\dist\es\utils\genHookId.js">
+      <file name="genHookId.js" path="/Users/shudeliang/projects/react-api-bridge/dist/es/utils/genHookId.js">
         <metrics statements="8" coveredstatements="6" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -313,7 +313,7 @@
         <line num="8" count="0" type="stmt"/>
         <line num="10" count="3" type="stmt"/>
       </file>
-      <file name="removeArrayElement.js" path="D:\projects\TypeScript-Babel-Starter-master\dist\es\utils\removeArrayElement.js">
+      <file name="removeArrayElement.js" path="/Users/shudeliang/projects/react-api-bridge/dist/es/utils/removeArrayElement.js">
         <metrics statements="5" coveredstatements="5" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="8" type="cond" truecount="2" falsecount="0"/>
@@ -321,19 +321,19 @@
         <line num="4" count="5" type="cond" truecount="2" falsecount="0"/>
         <line num="5" count="2" type="stmt"/>
       </file>
-      <file name="tryInvoke.js" path="D:\projects\TypeScript-Babel-Starter-master\dist\es\utils\tryInvoke.js">
+      <file name="tryInvoke.js" path="/Users/shudeliang/projects/react-api-bridge/dist/es/utils/tryInvoke.js">
         <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
         <line num="2" count="2" type="cond" truecount="2" falsecount="0"/>
         <line num="3" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
       </file>
-      <file name="useHookId.js" path="D:\projects\TypeScript-Babel-Starter-master\dist\es\utils\useHookId.js">
+      <file name="useHookId.js" path="/Users/shudeliang/projects/react-api-bridge/dist/es/utils/useHookId.js">
         <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="2"/>
         <line num="4" count="5" type="stmt"/>
         <line num="5" count="3" type="cond" truecount="1" falsecount="1"/>
       </file>
-      <file name="useUniqueElementRef.js" path="D:\projects\TypeScript-Babel-Starter-master\dist\es\utils\useUniqueElementRef.js">
+      <file name="useUniqueElementRef.js" path="/Users/shudeliang/projects/react-api-bridge/dist/es/utils/useUniqueElementRef.js">
         <metrics statements="7" coveredstatements="6" conditionals="4" coveredconditionals="2" methods="3" coveredmethods="3"/>
         <line num="4" count="10" type="stmt"/>
         <line num="5" count="10" type="stmt"/>
@@ -346,7 +346,7 @@
     </package>
     <package name="dist.lib">
       <metrics statements="50" coveredstatements="50" conditionals="31" coveredconditionals="24" methods="14" coveredmethods="14"/>
-      <file name="bridge.js" path="D:\projects\TypeScript-Babel-Starter-master\dist\lib\bridge.js">
+      <file name="bridge.js" path="/Users/shudeliang/projects/react-api-bridge/dist/lib/bridge.js">
         <metrics statements="26" coveredstatements="26" conditionals="11" coveredconditionals="8" methods="7" coveredmethods="7"/>
         <line num="2" count="4" type="stmt"/>
         <line num="3" count="4" type="stmt"/>
@@ -375,7 +375,7 @@
         <line num="31" count="5" type="stmt"/>
         <line num="33" count="4" type="stmt"/>
       </file>
-      <file name="index.js" path="D:\projects\TypeScript-Babel-Starter-master\dist\lib\index.js">
+      <file name="index.js" path="/Users/shudeliang/projects/react-api-bridge/dist/lib/index.js">
         <metrics statements="24" coveredstatements="24" conditionals="20" coveredconditionals="16" methods="7" coveredmethods="7"/>
         <line num="2" count="4" type="stmt"/>
         <line num="3" count="4" type="stmt"/>
@@ -405,7 +405,7 @@
     </package>
     <package name="dist.lib.core">
       <metrics statements="311" coveredstatements="308" conditionals="160" coveredconditionals="127" methods="84" coveredmethods="82"/>
-      <file name="genOutput.js" path="D:\projects\TypeScript-Babel-Starter-master\dist\lib\core\genOutput.js">
+      <file name="genOutput.js" path="/Users/shudeliang/projects/react-api-bridge/dist/lib/core/genOutput.js">
         <metrics statements="28" coveredstatements="28" conditionals="11" coveredconditionals="8" methods="6" coveredmethods="6"/>
         <line num="2" count="4" type="stmt"/>
         <line num="3" count="4" type="stmt"/>
@@ -436,7 +436,7 @@
         <line num="44" count="8" type="stmt"/>
         <line num="45" count="8" type="stmt"/>
       </file>
-      <file name="getApiDesc.js" path="D:\projects\TypeScript-Babel-Starter-master\dist\lib\core\getApiDesc.js">
+      <file name="getApiDesc.js" path="/Users/shudeliang/projects/react-api-bridge/dist/lib/core/getApiDesc.js">
         <metrics statements="28" coveredstatements="28" conditionals="15" coveredconditionals="12" methods="6" coveredmethods="6"/>
         <line num="2" count="4" type="stmt"/>
         <line num="3" count="4" type="stmt"/>
@@ -467,7 +467,7 @@
         <line num="32" count="39" type="stmt"/>
         <line num="37" count="451" type="stmt"/>
       </file>
-      <file name="getIsMulti.js" path="D:\projects\TypeScript-Babel-Starter-master\dist\lib\core\getIsMulti.js">
+      <file name="getIsMulti.js" path="/Users/shudeliang/projects/react-api-bridge/dist/lib/core/getIsMulti.js">
         <metrics statements="20" coveredstatements="20" conditionals="11" coveredconditionals="8" methods="6" coveredmethods="6"/>
         <line num="2" count="4" type="stmt"/>
         <line num="3" count="4" type="stmt"/>
@@ -490,7 +490,7 @@
         <line num="24" count="4" type="stmt"/>
         <line num="25" count="458" type="stmt"/>
       </file>
-      <file name="getResolverOrCreateWhenMissing.js" path="D:\projects\TypeScript-Babel-Starter-master\dist\lib\core\getResolverOrCreateWhenMissing.js">
+      <file name="getResolverOrCreateWhenMissing.js" path="/Users/shudeliang/projects/react-api-bridge/dist/lib/core/getResolverOrCreateWhenMissing.js">
         <metrics statements="37" coveredstatements="37" conditionals="19" coveredconditionals="16" methods="10" coveredmethods="10"/>
         <line num="2" count="4" type="stmt"/>
         <line num="3" count="4" type="stmt"/>
@@ -530,7 +530,7 @@
         <line num="52" count="33" type="stmt"/>
         <line num="54" count="52" type="stmt"/>
       </file>
-      <file name="getUpperApiDesc.js" path="D:\projects\TypeScript-Babel-Starter-master\dist\lib\core\getUpperApiDesc.js">
+      <file name="getUpperApiDesc.js" path="/Users/shudeliang/projects/react-api-bridge/dist/lib/core/getUpperApiDesc.js">
         <metrics statements="23" coveredstatements="23" conditionals="15" coveredconditionals="12" methods="6" coveredmethods="6"/>
         <line num="2" count="4" type="stmt"/>
         <line num="3" count="4" type="stmt"/>
@@ -556,7 +556,7 @@
         <line num="28" count="6" type="cond" truecount="2" falsecount="0"/>
         <line num="29" count="5" type="stmt"/>
       </file>
-      <file name="getUpperContextValue.js" path="D:\projects\TypeScript-Babel-Starter-master\dist\lib\core\getUpperContextValue.js">
+      <file name="getUpperContextValue.js" path="/Users/shudeliang/projects/react-api-bridge/dist/lib/core/getUpperContextValue.js">
         <metrics statements="31" coveredstatements="31" conditionals="17" coveredconditionals="14" methods="7" coveredmethods="7"/>
         <line num="2" count="4" type="stmt"/>
         <line num="3" count="4" type="stmt"/>
@@ -590,7 +590,7 @@
         <line num="40" count="4" type="stmt"/>
         <line num="42" count="10" type="stmt"/>
       </file>
-      <file name="index.js" path="D:\projects\TypeScript-Babel-Starter-master\dist\lib\core\index.js">
+      <file name="index.js" path="/Users/shudeliang/projects/react-api-bridge/dist/lib/core/index.js">
         <metrics statements="35" coveredstatements="33" conditionals="11" coveredconditionals="8" methods="13" coveredmethods="11"/>
         <line num="2" count="4" type="stmt"/>
         <line num="3" count="4" type="stmt"/>
@@ -628,7 +628,7 @@
         <line num="39" count="4" type="stmt"/>
         <line num="40" count="4" type="stmt"/>
       </file>
-      <file name="mountHookInitEffect.js" path="D:\projects\TypeScript-Babel-Starter-master\dist\lib\core\mountHookInitEffect.js">
+      <file name="mountHookInitEffect.js" path="/Users/shudeliang/projects/react-api-bridge/dist/lib/core/mountHookInitEffect.js">
         <metrics statements="45" coveredstatements="44" conditionals="29" coveredconditionals="23" methods="11" coveredmethods="11"/>
         <line num="2" count="4" type="stmt"/>
         <line num="3" count="4" type="stmt"/>
@@ -676,7 +676,7 @@
         <line num="60" count="11" type="stmt"/>
         <line num="61" count="11" type="stmt"/>
       </file>
-      <file name="useFinalContextValue.js" path="D:\projects\TypeScript-Babel-Starter-master\dist\lib\core\useFinalContextValue.js">
+      <file name="useFinalContextValue.js" path="/Users/shudeliang/projects/react-api-bridge/dist/lib/core/useFinalContextValue.js">
         <metrics statements="23" coveredstatements="23" conditionals="15" coveredconditionals="12" methods="6" coveredmethods="6"/>
         <line num="2" count="4" type="stmt"/>
         <line num="3" count="4" type="stmt"/>
@@ -702,7 +702,7 @@
         <line num="27" count="944" type="stmt"/>
         <line num="28" count="944" type="cond" truecount="2" falsecount="0"/>
       </file>
-      <file name="useInitEffect.js" path="D:\projects\TypeScript-Babel-Starter-master\dist\lib\core\useInitEffect.js">
+      <file name="useInitEffect.js" path="/Users/shudeliang/projects/react-api-bridge/dist/lib/core/useInitEffect.js">
         <metrics statements="41" coveredstatements="41" conditionals="17" coveredconditionals="14" methods="13" coveredmethods="13"/>
         <line num="2" count="4" type="stmt"/>
         <line num="3" count="4" type="stmt"/>
@@ -749,7 +749,7 @@
     </package>
     <package name="dist.lib.features">
       <metrics statements="42" coveredstatements="40" conditionals="18" coveredconditionals="13" methods="16" coveredmethods="14"/>
-      <file name="index.js" path="D:\projects\TypeScript-Babel-Starter-master\dist\lib\features\index.js">
+      <file name="index.js" path="/Users/shudeliang/projects/react-api-bridge/dist/lib/features/index.js">
         <metrics statements="42" coveredstatements="40" conditionals="18" coveredconditionals="13" methods="16" coveredmethods="14"/>
         <line num="2" count="4" type="stmt"/>
         <line num="3" count="4" type="stmt"/>
@@ -797,7 +797,7 @@
     </package>
     <package name="dist.lib.features.components">
       <metrics statements="39" coveredstatements="37" conditionals="26" coveredconditionals="21" methods="12" coveredmethods="10"/>
-      <file name="Boundary.js" path="D:\projects\TypeScript-Babel-Starter-master\dist\lib\features\components\Boundary.js">
+      <file name="Boundary.js" path="/Users/shudeliang/projects/react-api-bridge/dist/lib/features/components/Boundary.js">
         <metrics statements="39" coveredstatements="37" conditionals="26" coveredconditionals="21" methods="12" coveredmethods="10"/>
         <line num="2" count="4" type="stmt"/>
         <line num="3" count="4" type="stmt"/>
@@ -842,7 +842,7 @@
     </package>
     <package name="dist.lib.features.hooks">
       <metrics statements="226" coveredstatements="220" conditionals="110" coveredconditionals="79" methods="63" coveredmethods="58"/>
-      <file name="useAPI.js" path="D:\projects\TypeScript-Babel-Starter-master\dist\lib\features\hooks\useAPI.js">
+      <file name="useAPI.js" path="/Users/shudeliang/projects/react-api-bridge/dist/lib/features/hooks/useAPI.js">
         <metrics statements="24" coveredstatements="24" conditionals="13" coveredconditionals="10" methods="6" coveredmethods="6"/>
         <line num="2" count="4" type="stmt"/>
         <line num="3" count="4" type="stmt"/>
@@ -869,7 +869,7 @@
         <line num="29" count="390" type="stmt"/>
         <line num="30" count="390" type="stmt"/>
       </file>
-      <file name="useBoundaryContext.js" path="D:\projects\TypeScript-Babel-Starter-master\dist\lib\features\hooks\useBoundaryContext.js">
+      <file name="useBoundaryContext.js" path="/Users/shudeliang/projects/react-api-bridge/dist/lib/features/hooks/useBoundaryContext.js">
         <metrics statements="23" coveredstatements="23" conditionals="11" coveredconditionals="8" methods="7" coveredmethods="7"/>
         <line num="2" count="4" type="stmt"/>
         <line num="3" count="4" type="stmt"/>
@@ -895,7 +895,7 @@
         <line num="28" count="170" type="stmt"/>
         <line num="29" count="18" type="stmt"/>
       </file>
-      <file name="useBoundaryPayload.js" path="D:\projects\TypeScript-Babel-Starter-master\dist\lib\features\hooks\useBoundaryPayload.js">
+      <file name="useBoundaryPayload.js" path="/Users/shudeliang/projects/react-api-bridge/dist/lib/features/hooks/useBoundaryPayload.js">
         <metrics statements="21" coveredstatements="21" conditionals="11" coveredconditionals="8" methods="6" coveredmethods="6"/>
         <line num="2" count="4" type="stmt"/>
         <line num="3" count="4" type="stmt"/>
@@ -919,7 +919,7 @@
         <line num="26" count="61" type="stmt"/>
         <line num="27" count="61" type="stmt"/>
       </file>
-      <file name="useBridgeRef.js" path="D:\projects\TypeScript-Babel-Starter-master\dist\lib\features\hooks\useBridgeRef.js">
+      <file name="useBridgeRef.js" path="/Users/shudeliang/projects/react-api-bridge/dist/lib/features/hooks/useBridgeRef.js">
         <metrics statements="20" coveredstatements="18" conditionals="11" coveredconditionals="8" methods="6" coveredmethods="3"/>
         <line num="2" count="4" type="stmt"/>
         <line num="3" count="4" type="stmt"/>
@@ -942,7 +942,7 @@
         <line num="24" count="4" type="stmt"/>
         <line num="26" count="0" type="stmt"/>
       </file>
-      <file name="useRegister.js" path="D:\projects\TypeScript-Babel-Starter-master\dist\lib\features\hooks\useRegister.js">
+      <file name="useRegister.js" path="/Users/shudeliang/projects/react-api-bridge/dist/lib/features/hooks/useRegister.js">
         <metrics statements="49" coveredstatements="49" conditionals="13" coveredconditionals="10" methods="13" coveredmethods="13"/>
         <line num="2" count="4" type="stmt"/>
         <line num="3" count="4" type="stmt"/>
@@ -994,7 +994,7 @@
         <line num="63" count="47" type="stmt"/>
         <line num="64" count="47" type="stmt"/>
       </file>
-      <file name="useTools.js" path="D:\projects\TypeScript-Babel-Starter-master\dist\lib\features\hooks\useTools.js">
+      <file name="useTools.js" path="/Users/shudeliang/projects/react-api-bridge/dist/lib/features/hooks/useTools.js">
         <metrics statements="37" coveredstatements="33" conditionals="23" coveredconditionals="14" methods="11" coveredmethods="9"/>
         <line num="2" count="4" type="stmt"/>
         <line num="3" count="4" type="stmt"/>
@@ -1034,7 +1034,7 @@
         <line num="49" count="3" type="stmt"/>
         <line num="51" count="32" type="stmt"/>
       </file>
-      <file name="useUpperAPI.js" path="D:\projects\TypeScript-Babel-Starter-master\dist\lib\features\hooks\useUpperAPI.js">
+      <file name="useUpperAPI.js" path="/Users/shudeliang/projects/react-api-bridge/dist/lib/features/hooks/useUpperAPI.js">
         <metrics statements="27" coveredstatements="27" conditionals="15" coveredconditionals="11" methods="7" coveredmethods="7"/>
         <line num="2" count="4" type="stmt"/>
         <line num="3" count="4" type="stmt"/>
@@ -1064,7 +1064,7 @@
         <line num="35" count="27" type="stmt"/>
         <line num="36" count="27" type="stmt"/>
       </file>
-      <file name="useUpperBoundaryPayload.js" path="D:\projects\TypeScript-Babel-Starter-master\dist\lib\features\hooks\useUpperBoundaryPayload.js">
+      <file name="useUpperBoundaryPayload.js" path="/Users/shudeliang/projects/react-api-bridge/dist/lib/features/hooks/useUpperBoundaryPayload.js">
         <metrics statements="25" coveredstatements="25" conditionals="13" coveredconditionals="10" methods="7" coveredmethods="7"/>
         <line num="2" count="4" type="stmt"/>
         <line num="3" count="4" type="stmt"/>
@@ -1095,7 +1095,7 @@
     </package>
     <package name="dist.lib.features.methods">
       <metrics statements="44" coveredstatements="41" conditionals="24" coveredconditionals="16" methods="12" coveredmethods="9"/>
-      <file name="getBridgeAPI.js" path="D:\projects\TypeScript-Babel-Starter-master\dist\lib\features\methods\getBridgeAPI.js">
+      <file name="getBridgeAPI.js" path="/Users/shudeliang/projects/react-api-bridge/dist/lib/features/methods/getBridgeAPI.js">
         <metrics statements="21" coveredstatements="18" conditionals="13" coveredconditionals="8" methods="6" coveredmethods="3"/>
         <line num="2" count="4" type="stmt"/>
         <line num="3" count="4" type="stmt"/>
@@ -1119,7 +1119,7 @@
         <line num="26" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="27" count="0" type="stmt"/>
       </file>
-      <file name="getBridgeAPIAsync.js" path="D:\projects\TypeScript-Babel-Starter-master\dist\lib\features\methods\getBridgeAPIAsync.js">
+      <file name="getBridgeAPIAsync.js" path="/Users/shudeliang/projects/react-api-bridge/dist/lib/features/methods/getBridgeAPIAsync.js">
         <metrics statements="23" coveredstatements="23" conditionals="11" coveredconditionals="8" methods="6" coveredmethods="6"/>
         <line num="2" count="4" type="stmt"/>
         <line num="3" count="4" type="stmt"/>
@@ -1148,7 +1148,7 @@
     </package>
     <package name="dist.lib.utils">
       <metrics statements="148" coveredstatements="146" conditionals="84" coveredconditionals="64" methods="41" coveredmethods="41"/>
-      <file name="appendToMappedValue.js" path="D:\projects\TypeScript-Babel-Starter-master\dist\lib\utils\appendToMappedValue.js">
+      <file name="appendToMappedValue.js" path="/Users/shudeliang/projects/react-api-bridge/dist/lib/utils/appendToMappedValue.js">
         <metrics statements="28" coveredstatements="28" conditionals="15" coveredconditionals="12" methods="7" coveredmethods="7"/>
         <line num="2" count="4" type="stmt"/>
         <line num="3" count="4" type="stmt"/>
@@ -1179,7 +1179,7 @@
         <line num="35" count="56" type="cond" truecount="2" falsecount="0"/>
         <line num="36" count="46" type="stmt"/>
       </file>
-      <file name="genHookId.js" path="D:\projects\TypeScript-Babel-Starter-master\dist\lib\utils\genHookId.js">
+      <file name="genHookId.js" path="/Users/shudeliang/projects/react-api-bridge/dist/lib/utils/genHookId.js">
         <metrics statements="26" coveredstatements="24" conditionals="13" coveredconditionals="9" methods="6" coveredmethods="6"/>
         <line num="2" count="4" type="stmt"/>
         <line num="3" count="4" type="stmt"/>
@@ -1208,7 +1208,7 @@
         <line num="31" count="0" type="stmt"/>
         <line num="33" count="41" type="stmt"/>
       </file>
-      <file name="removeArrayElement.js" path="D:\projects\TypeScript-Babel-Starter-master\dist\lib\utils\removeArrayElement.js">
+      <file name="removeArrayElement.js" path="/Users/shudeliang/projects/react-api-bridge/dist/lib/utils/removeArrayElement.js">
         <metrics statements="23" coveredstatements="23" conditionals="15" coveredconditionals="12" methods="7" coveredmethods="7"/>
         <line num="2" count="4" type="stmt"/>
         <line num="3" count="4" type="stmt"/>
@@ -1234,7 +1234,7 @@
         <line num="27" count="224" type="cond" truecount="2" falsecount="0"/>
         <line num="28" count="79" type="stmt"/>
       </file>
-      <file name="tryInvoke.js" path="D:\projects\TypeScript-Babel-Starter-master\dist\lib\utils\tryInvoke.js">
+      <file name="tryInvoke.js" path="/Users/shudeliang/projects/react-api-bridge/dist/lib/utils/tryInvoke.js">
         <metrics statements="22" coveredstatements="22" conditionals="13" coveredconditionals="10" methods="6" coveredmethods="6"/>
         <line num="2" count="4" type="stmt"/>
         <line num="3" count="4" type="stmt"/>
@@ -1259,7 +1259,7 @@
         <line num="27" count="49" type="stmt"/>
         <line num="29" count="8" type="stmt"/>
       </file>
-      <file name="useHookId.js" path="D:\projects\TypeScript-Babel-Starter-master\dist\lib\utils\useHookId.js">
+      <file name="useHookId.js" path="/Users/shudeliang/projects/react-api-bridge/dist/lib/utils/useHookId.js">
         <metrics statements="22" coveredstatements="22" conditionals="13" coveredconditionals="9" methods="7" coveredmethods="7"/>
         <line num="2" count="4" type="stmt"/>
         <line num="3" count="4" type="stmt"/>
@@ -1284,7 +1284,7 @@
         <line num="27" count="417" type="stmt"/>
         <line num="28" count="41" type="cond" truecount="1" falsecount="1"/>
       </file>
-      <file name="useUniqueElementRef.js" path="D:\projects\TypeScript-Babel-Starter-master\dist\lib\utils\useUniqueElementRef.js">
+      <file name="useUniqueElementRef.js" path="/Users/shudeliang/projects/react-api-bridge/dist/lib/utils/useUniqueElementRef.js">
         <metrics statements="27" coveredstatements="27" conditionals="15" coveredconditionals="12" methods="8" coveredmethods="8"/>
         <line num="2" count="4" type="stmt"/>
         <line num="3" count="4" type="stmt"/>
@@ -1317,7 +1317,7 @@
     </package>
     <package name="src.utils">
       <metrics statements="18" coveredstatements="18" conditionals="10" coveredconditionals="9" methods="5" coveredmethods="5"/>
-      <file name="appendToMappedValue.ts" path="D:\projects\TypeScript-Babel-Starter-master\src\utils\appendToMappedValue.ts">
+      <file name="appendToMappedValue.ts" path="/Users/shudeliang/projects/react-api-bridge/src/utils/appendToMappedValue.ts">
         <metrics statements="9" coveredstatements="9" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
         <line num="4" count="3" type="stmt"/>
         <line num="5" count="3" type="cond" truecount="2" falsecount="0"/>
@@ -1329,7 +1329,7 @@
         <line num="14" count="2" type="cond" truecount="2" falsecount="0"/>
         <line num="15" count="1" type="stmt"/>
       </file>
-      <file name="removeArrayElement.ts" path="D:\projects\TypeScript-Babel-Starter-master\src\utils\removeArrayElement.ts">
+      <file name="removeArrayElement.ts" path="/Users/shudeliang/projects/react-api-bridge/src/utils/removeArrayElement.ts">
         <metrics statements="5" coveredstatements="5" conditionals="4" coveredconditionals="3" methods="2" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="6" type="cond" truecount="1" falsecount="1"/>
@@ -1337,7 +1337,7 @@
         <line num="4" count="6" type="cond" truecount="2" falsecount="0"/>
         <line num="5" count="5" type="stmt"/>
       </file>
-      <file name="tryInvoke.ts" path="D:\projects\TypeScript-Babel-Starter-master\src\utils\tryInvoke.ts">
+      <file name="tryInvoke.ts" path="/Users/shudeliang/projects/react-api-bridge/src/utils/tryInvoke.ts">
         <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
         <line num="2" count="8" type="cond" truecount="2" falsecount="0"/>
         <line num="3" count="2" type="stmt"/>
@@ -1347,7 +1347,7 @@
     </package>
     <package name="web-server-dev.examples">
       <metrics statements="310" coveredstatements="287" conditionals="70" coveredconditionals="59" methods="160" coveredmethods="137"/>
-      <file name="example-async.tsx" path="D:\projects\TypeScript-Babel-Starter-master\web-server-dev\examples\example-async.tsx">
+      <file name="example-async.tsx" path="/Users/shudeliang/projects/react-api-bridge/web-server-dev/examples/example-async.tsx">
         <metrics statements="29" coveredstatements="29" conditionals="0" coveredconditionals="0" methods="23" coveredmethods="23"/>
         <line num="8" count="1" type="stmt"/>
         <line num="9" count="1" type="stmt"/>
@@ -1379,7 +1379,7 @@
         <line num="105" count="1" type="stmt"/>
         <line num="113" count="1" type="stmt"/>
       </file>
-      <file name="example-multiple.tsx" path="D:\projects\TypeScript-Babel-Starter-master\web-server-dev\examples\example-multiple.tsx">
+      <file name="example-multiple.tsx" path="/Users/shudeliang/projects/react-api-bridge/web-server-dev/examples/example-multiple.tsx">
         <metrics statements="82" coveredstatements="78" conditionals="12" coveredconditionals="10" methods="44" coveredmethods="39"/>
         <line num="6" count="1" type="stmt"/>
         <line num="9" count="13" type="stmt"/>
@@ -1464,7 +1464,7 @@
         <line num="259" count="1" type="stmt"/>
         <line num="276" count="1" type="stmt"/>
       </file>
-      <file name="example-nested.tsx" path="D:\projects\TypeScript-Babel-Starter-master\web-server-dev\examples\example-nested.tsx">
+      <file name="example-nested.tsx" path="/Users/shudeliang/projects/react-api-bridge/web-server-dev/examples/example-nested.tsx">
         <metrics statements="85" coveredstatements="76" conditionals="10" coveredconditionals="8" methods="47" coveredmethods="38"/>
         <line num="9" count="8" type="stmt"/>
         <line num="10" count="8" type="stmt"/>
@@ -1552,7 +1552,7 @@
         <line num="251" count="1" type="stmt"/>
         <line num="253" count="1" type="stmt"/>
       </file>
-      <file name="example-tree.tsx" path="D:\projects\TypeScript-Babel-Starter-master\web-server-dev\examples\example-tree.tsx">
+      <file name="example-tree.tsx" path="/Users/shudeliang/projects/react-api-bridge/web-server-dev/examples/example-tree.tsx">
         <metrics statements="73" coveredstatements="70" conditionals="38" coveredconditionals="33" methods="25" coveredmethods="22"/>
         <line num="19" count="4" type="stmt"/>
         <line num="20" count="4" type="stmt"/>
@@ -1628,7 +1628,7 @@
         <line num="231" count="1" type="stmt"/>
         <line num="245" count="1" type="stmt"/>
       </file>
-      <file name="example1.tsx" path="D:\projects\TypeScript-Babel-Starter-master\web-server-dev\examples\example1.tsx">
+      <file name="example1.tsx" path="/Users/shudeliang/projects/react-api-bridge/web-server-dev/examples/example1.tsx">
         <metrics statements="41" coveredstatements="34" conditionals="10" coveredconditionals="8" methods="21" coveredmethods="15"/>
         <line num="6" count="2" type="stmt"/>
         <line num="7" count="2" type="stmt"/>

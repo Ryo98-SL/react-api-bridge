@@ -1,0 +1,59 @@
+<svg width="990" height="527" viewBox="0 0 990 527" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="spokeStroke" x1="294" y1="132" x2="704" y2="492" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8BE9FF"/>
+      <stop offset="1" stop-color="#4CC7FF"/>
+    </linearGradient>
+    <linearGradient id="nodeFill" x1="294" y1="132" x2="704" y2="492" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#74E3FF"/>
+      <stop offset="1" stop-color="#56CFFF"/>
+    </linearGradient>
+    <filter id="softGlow" x="230" y="90" width="540" height="440" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="9" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <g filter="url(#softGlow)" opacity="0.24" stroke="#61DAFB" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="495" y1="264" x2="495" y2="134" stroke-width="14"/>
+    <line x1="495" y1="264" x2="663" y2="167" stroke-width="14"/>
+    <line x1="495" y1="264" x2="607.6" y2="329" stroke-width="14"/>
+    <line x1="495" y1="264" x2="495" y2="458" stroke-width="14"/>
+    <line x1="495" y1="264" x2="382.4" y2="329" stroke-width="14"/>
+    <line x1="495" y1="264" x2="327" y2="167" stroke-width="14"/>
+    <path d="M514 128.2 A34 34 0 1 1 476 128.2" stroke-width="14"/>
+    <path d="M677.5 180.6 A34 34 0 1 1 658.5 147.6" stroke-width="14"/>
+    <path d="M603.1 348.4 A34 34 0 1 1 622.1 315.4" stroke-width="14"/>
+    <path d="M476 463.8 A34 34 0 1 1 514 463.8" stroke-width="14"/>
+    <path d="M367.9 315.4 A34 34 0 1 1 386.9 348.4" stroke-width="14"/>
+    <path d="M331.5 147.6 A34 34 0 1 1 312.5 180.6" stroke-width="14"/>
+  </g>
+
+  <g stroke="url(#spokeStroke)" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="495" y1="264" x2="495" y2="134" stroke-width="6"/>
+    <line x1="495" y1="264" x2="663" y2="167" stroke-width="6"/>
+    <line x1="495" y1="264" x2="607.6" y2="329" stroke-width="6"/>
+    <line x1="495" y1="264" x2="495" y2="458" stroke-width="6"/>
+    <line x1="495" y1="264" x2="382.4" y2="329" stroke-width="6"/>
+    <line x1="495" y1="264" x2="327" y2="167" stroke-width="6"/>
+    <path d="M514 128.2 A34 34 0 1 1 476 128.2" stroke-width="6"/>
+    <path d="M677.5 180.6 A34 34 0 1 1 658.5 147.6" stroke-width="6"/>
+    <path d="M603.1 348.4 A34 34 0 1 1 622.1 315.4" stroke-width="6"/>
+    <path d="M476 463.8 A34 34 0 1 1 514 463.8" stroke-width="6"/>
+    <path d="M367.9 315.4 A34 34 0 1 1 386.9 348.4" stroke-width="6"/>
+    <path d="M331.5 147.6 A34 34 0 1 1 312.5 180.6" stroke-width="6"/>
+  </g>
+
+  <g>
+    <circle cx="495" cy="264" r="28" fill="url(#nodeFill)"/>
+    <circle cx="495" cy="100" r="13" fill="none" stroke="url(#nodeFill)" stroke-width="5"/>
+    <circle cx="692.5" cy="150" r="13" fill="none" stroke="url(#nodeFill)" stroke-width="5"/>
+    <circle cx="637" cy="346" r="13" fill="none" stroke="url(#nodeFill)" stroke-width="5"/>
+    <circle cx="495" cy="492" r="13" fill="none" stroke="url(#nodeFill)" stroke-width="5"/>
+    <circle cx="353" cy="346" r="13" fill="none" stroke="url(#nodeFill)" stroke-width="5"/>
+    <circle cx="297.5" cy="150" r="13" fill="none" stroke="url(#nodeFill)" stroke-width="5"/>
+  </g>
+</svg>

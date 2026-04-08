@@ -1,0 +1,144 @@
+.custom-header-actions {
+  display: none;
+}
+
+.VPNavBarTitle .logo {
+  width: auto;
+  height: 28px;
+}
+
+@media (min-width: 768px) {
+  .custom-header-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-left: 16px;
+  }
+}
+
+.custom-header-actions .locale-link,
+.custom-header-actions .github-link {
+  color: var(--vp-c-text-1);
+  font-size: 14px;
+  line-height: var(--vp-nav-height);
+  text-decoration: none;
+  transition: color 0.25s;
+}
+
+.custom-header-actions .locale-link:hover,
+.custom-header-actions .github-link:hover {
+  color: var(--vp-c-brand-1);
+}
+
+.custom-header-actions .theme-toggle {
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 960px) {
+  .VPNavBarExtra,
+  .VPNavBarTranslations,
+  .VPNavBarAppearance,
+  .VPNavBarSocialLinks {
+    display: none !important;
+  }
+}
+
+/*
+ * VitePress only switches to persistent sidebar layout at 960px by default.
+ * Keep a visible sidebar below that breakpoint as well.
+ */
+@media (max-width: 959px) {
+  :root {
+    --custom-visible-sidebar-width: min(240px, 42vw);
+  }
+
+  .VPSidebar {
+    padding-top: var(--vp-nav-height);
+    width: var(--custom-visible-sidebar-width);
+    max-width: 100%;
+    background-color: var(--vp-sidebar-bg-color);
+    opacity: 1;
+    visibility: visible;
+    box-shadow: none;
+    transform: translateX(0);
+  }
+
+  .VPSidebar .group {
+    width: calc(var(--custom-visible-sidebar-width) - 64px);
+  }
+
+  .VPSidebar .curtain,
+  .VPSidebar .curtain::before,
+  .curtain {
+    position: sticky;
+    top: -64px;
+    left: 0;
+    z-index: 1;
+    margin-top: calc(var(--vp-nav-height) * -1);
+    margin-right: -32px;
+    margin-left: -32px;
+    height: var(--vp-nav-height);
+    background-color: var(--vp-sidebar-bg-color);
+  }
+
+  .VPContent {
+    padding-top: var(--vp-nav-height);
+  }
+
+  .VPContent.has-sidebar {
+    margin: var(--vp-layout-top-height, 0px) 0 0;
+    padding-left: var(--custom-visible-sidebar-width);
+  }
+
+  .VPNavBar.has-sidebar .wrapper {
+    padding: 0;
+  }
+
+  .VPNavBar.has-sidebar .container {
+    max-width: 100%;
+  }
+
+  .VPNavBar.has-sidebar .title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    padding: 0 32px;
+    width: var(--custom-visible-sidebar-width);
+    height: var(--vp-nav-height);
+    background-color: transparent;
+  }
+
+  .VPNavBar.has-sidebar .content {
+    position: relative;
+    z-index: 1;
+    padding-right: 32px;
+    padding-left: var(--custom-visible-sidebar-width);
+  }
+
+  .VPNavBar:not(.home.top) .content-body {
+    position: relative;
+    background-color: var(--vp-nav-bg-color);
+  }
+
+  .VPNavBar.has-sidebar .divider {
+    padding-left: var(--custom-visible-sidebar-width);
+  }
+
+  .VPLocalNav,
+  .VPLocalNav.has-sidebar,
+  .VPLocalNavOutlineDropdown {
+    display: none !important;
+  }
+}
+
+@media (max-width: 767px) {
+  :root {
+    --custom-visible-sidebar-width: min(220px, 48vw);
+  }
+
+  .custom-header-actions {
+    display: none;
+  }
+}
