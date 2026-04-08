@@ -3,6 +3,8 @@ dist
 node_modules
 .idea
 
+coverage
+
 # VitePress caches/build output
 docs/.vitepress/cache
 docs/.vitepress/dist
