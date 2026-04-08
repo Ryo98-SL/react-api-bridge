@@ -14,7 +14,7 @@ hero:
       link: /zh/guide/getting-started
     - theme: alt
       text: GitHub
-      link: https://github.com/Ryo98-SL/react-awesome-api-bridge
+      link: https://github.com/Ryo98-SL/react-api-bridge
 
 features:
   - title: Boundary 作用域

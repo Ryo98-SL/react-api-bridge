@@ -1,6 +1,6 @@
 import { defineConfig } from "vitepress";
 
-const repoBase = "/react-awesome-api-bridge/";
+const repoBase = "/react-api-bridge/";
 const isGithubPages =
     process.env.GITHUB_ACTIONS === "true" || process.env.CI === "true";
 
@@ -95,7 +95,7 @@ export default defineConfig({
         socialLinks: [
             {
                 icon: "github",
-                link: "https://github.com/Ryo98-SL/react-awesome-api-bridge",
+                link: "https://github.com/Ryo98-SL/react-api-bridge",
             },
         ],
         search: {

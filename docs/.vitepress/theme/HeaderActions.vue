@@ -26,7 +26,7 @@ const localeLabel = computed(() => (isZh.value ? "English" : "简体中文"));
         </div>
         <a
             class="github-link"
-            href="https://github.com/Ryo98-SL/react-awesome-api-bridge"
+            href="https://github.com/Ryo98-SL/react-api-bridge"
             target="_blank"
             rel="noreferrer"
         >

@@ -12,8 +12,8 @@ Scoped imperative APIs for React.
 
 ## Docs
 
-- English: https://ryo98-sl.github.io/react-awesome-api-bridge/
-- 简体中文: https://ryo98-sl.github.io/react-awesome-api-bridge/zh/
+- English: https://ryo98-sl.github.io/react-api-bridge/
+- 简体中文: https://ryo98-sl.github.io/react-api-bridge/zh/
 
 ## Install
 
