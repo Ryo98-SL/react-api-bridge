@@ -3,11 +3,15 @@ import { defineConfig } from "vitepress";
 const repoBase = "/react-api-bridge/";
 const isGithubPages =
     process.env.GITHUB_ACTIONS === "true" || process.env.CI === "true";
+const assetBase = isGithubPages ? repoBase : "/";
 
 export default defineConfig({
     title: "React API Bridge",
     description: "Scoped imperative APIs for React",
     base: isGithubPages ? repoBase : "/",
+    head: [
+        ["link", { rel: "icon", type: "image/svg+xml", href: `${assetBase}react-api-bridge-logo.svg` }],
+    ],
     cleanUrls: true,
     lastUpdated: true,
     locales: {
