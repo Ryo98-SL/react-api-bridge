@@ -11,6 +11,8 @@ export default defineConfig({
     base: isGithubPages ? repoBase : "/",
     head: [
         ["link", { rel: "icon", type: "image/svg+xml", href: `${assetBase}react-api-bridge-logo.svg` }],
+        ["link", { rel: "icon", type: "image/png", href: `${assetBase}react-api-bridge-logo.png` }],
+        ["link", { rel: "apple-touch-icon", href: `${assetBase}react-api-bridge-logo.png` }],
     ],
     cleanUrls: true,
     lastUpdated: true,
