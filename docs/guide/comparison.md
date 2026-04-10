@@ -1,5 +1,18 @@
 # Comparison
 
+## Where The Gap Is
+
+React already has strong answers for data flow, but not for cross-level action flow:
+
+| Scenario | React's answer |
+| --- | --- |
+| Passing data down, one level | props |
+| Passing data down, across levels | Context |
+| Exposing actions upward, one level | useImperativeHandle |
+| Exposing actions upward, across levels | **Blank (filled by react-api-bridge)** |
+
+That gap is why this library exists: it gives imperative capabilities a scoped, type-safe path across a React subtree.
+
 ## react-api-bridge vs EventEmitter
 
 | EventEmitter | react-api-bridge |

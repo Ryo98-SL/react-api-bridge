@@ -8,12 +8,21 @@
 
 Scoped imperative APIs for React.
 
-`react-api-bridge` lets you expose and call component methods across a React subtree without prop drilling. It is a scoped API registry, not an event bus.
+React has a mature solution for data flow, but not for action flow.\
+This library provides a scoped, type-safe way to expose and call methods across a React subtree,
+without prop drilling or forwarding refs obtained from `forwardRef` through layer after layer.
+
+| Scenario                               | React's answer                         |
+| -------------------------------------- | -------------------------------------- |
+| Passing data down, one level           | props                                  |
+| Passing data down, across levels       | Context                                |
+| Exposing actions upward, one level     | useImperativeHandle                    |
+| Exposing actions upward, across levels | **Blank (filled by react-api-bridge)** |
 
 ## Docs
 
-- English: https://ryo98-sl.github.io/react-api-bridge/
-- 简体中文: https://ryo98-sl.github.io/react-api-bridge/zh/
+- English: <https://ryo98-sl.github.io/react-api-bridge/>
+- 简体中文: <https://ryo98-sl.github.io/react-api-bridge/zh/>
 
 ## Install
 
@@ -21,7 +30,7 @@ Scoped imperative APIs for React.
 npm install @ryo-98/react-api-bridge
 ```
 
-## Why Use It
+## Its capability
 
 - Scope APIs with `Boundary` instead of leaking them globally
 - Call typed component methods directly instead of broadcasting events

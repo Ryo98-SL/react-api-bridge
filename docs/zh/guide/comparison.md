@@ -1,5 +1,18 @@
 # 对比
 
+## 缺口在哪里
+
+React 对数据流已经有比较成熟的答案，但对跨层的功能流还没有对应的标准解法：
+
+| 场景 | React 的答案 |
+| --- | --- |
+| 数据下传，单层 | props |
+| 数据下传，跨层 | Context |
+| 功能上传，单层 | useImperativeHandle |
+| 功能上传，跨层 | **空白（react-api-bridge 来填补）** |
+
+这也是这个库存在的原因：它为命令式能力提供了一条带作用域、类型安全的跨组件树通路。
+
 ## react-api-bridge vs EventEmitter
 
 | EventEmitter | react-api-bridge |

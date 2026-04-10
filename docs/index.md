@@ -40,6 +40,15 @@ React already handles state well. The hard part is imperative coordination:
 - Trigger a capability exposed by a plugin-like subtree
 - Access an API that may not be mounted yet
 
+Another way to frame it:
+
+| Scenario | React's answer |
+|---|---|
+| Passing data down, one level | props |
+| Passing data down, across levels | Context |
+| Exposing actions upward, one level | useImperativeHandle |
+| Exposing actions upward, across levels | **Blank (filled by react-api-bridge)** |
+
 `react-api-bridge` treats these as scoped imperative APIs instead of event broadcasts.
 
 ## Mental Model

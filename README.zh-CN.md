@@ -8,12 +8,23 @@
 
 React 的作用域命令式 API 桥。
 
-`react-api-bridge` 可以让你在 React 子树中跨组件暴露和调用方法，而不需要层层传递 props。它本质上是一个带作用域的 API 注册表，不是事件总线。
+React 对数据流已经有成熟答案，但对功能流还没有对应方案。\
+这个库提供了一种带作用域、类型安全的方式，
+可以让你在 React 子树中跨组件暴露和调用方法，而***不需要层层传递 props （Props Drilling）或者层层转发从forwardRef获取的Ref***。
+
+| 场景      | React 的答案                   |
+| ------- | --------------------------- |
+| 数据下传，单层 | props                       |
+| 数据下传，跨层 | Context                     |
+| 功能上传，单层 | useImperativeHandle         |
+| 功能上传，跨层 | **空白（react-api-bridge来填补）** |
+
+<br />
 
 ## 文档
 
-- English: https://ryo98-sl.github.io/react-api-bridge/
-- 简体中文: https://ryo98-sl.github.io/react-api-bridge/zh/
+- English: <https://ryo98-sl.github.io/react-api-bridge/>
+- 简体中文: <https://ryo98-sl.github.io/react-api-bridge/zh/>
 
 ## 安装
 
@@ -21,7 +32,7 @@ React 的作用域命令式 API 桥。
 npm install @ryo-98/react-api-bridge
 ```
 
-## 适合解决的问题
+## 它的能力
 
 - 用 `Boundary` 做 API 作用域隔离
 - 直接调用强类型组件方法，而不是广播事件
