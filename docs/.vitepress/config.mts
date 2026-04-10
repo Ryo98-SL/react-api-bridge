@@ -33,6 +33,7 @@ export default defineConfig({
                         text: "Guide",
                         items: [
                             { text: "Getting Started", link: "/guide/getting-started" },
+                            { text: "Why", link: "/guide/why" },
                             { text: "Core Concepts", link: "/guide/core-concepts" },
                             { text: "Comparison", link: "/guide/comparison" },
                             { text: "Use Cases", link: "/guide/use-cases" },
@@ -70,6 +71,7 @@ export default defineConfig({
                         text: "指南",
                         items: [
                             { text: "快速开始", link: "/zh/guide/getting-started" },
+                            { text: "为什么需要它", link: "/zh/guide/why" },
                             { text: "核心概念", link: "/zh/guide/core-concepts" },
                             { text: "对比", link: "/zh/guide/comparison" },
                             { text: "使用场景", link: "/zh/guide/use-cases" },

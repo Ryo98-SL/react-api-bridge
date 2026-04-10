@@ -21,6 +21,7 @@ That gap is why this library exists: it gives imperative capabilities a scoped, 
 | Consumers receive payloads | Consumers call typed methods |
 | Usually global by instance | Scoped by React boundaries |
 | Best for pub/sub | Best for component capability access |
+| Usually fire-and-forget, not modeled around return values | Supports return values and async invocation patterns |
 | `emit('open')` | `modalAPI.current?.open()` |
 
 Use an event emitter when you want notifications.
