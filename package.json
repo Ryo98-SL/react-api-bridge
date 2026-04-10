@@ -1,6 +1,6 @@
 {
   "name": "@ryo-98/react-api-bridge",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "description": "A registry for component imperative api",
   "main": "dist/lib/index.js",
