@@ -46,9 +46,10 @@
 
 /*
  * VitePress only switches to persistent sidebar layout at 960px by default.
- * Keep a visible sidebar below that breakpoint as well.
+ * Keep a visible sidebar on tablet widths, but restore the default mobile
+ * layout on smaller screens so content is not pushed to the right.
  */
-@media (max-width: 959px) {
+@media (min-width: 768px) and (max-width: 959px) {
   :root {
     --custom-visible-sidebar-width: min(240px, 42vw);
   }
@@ -134,10 +135,6 @@
 }
 
 @media (max-width: 767px) {
-  :root {
-    --custom-visible-sidebar-width: min(220px, 48vw);
-  }
-
   .custom-header-actions {
     display: none;
   }
