@@ -1,7 +1,9 @@
+.DS_Store
 lib
 dist
 node_modules
 .idea
+.husky/_
 
 coverage
 
