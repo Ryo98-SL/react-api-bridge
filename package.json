@@ -30,6 +30,7 @@
   "files": [
     "package.json",
     "dist",
+    "!dist/analyze",
     "LICENSE",
     "README.md",
     "README.zh-CN.md"

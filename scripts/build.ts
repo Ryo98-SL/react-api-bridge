@@ -3,15 +3,15 @@ import yargs from "yargs";
 import {hideBin} from "yargs/helpers";
 import webpack from "webpack";
 import '@ungap/with-resolvers';
-import {FactoryArgument} from "./configs/webpack.common.config";
 import {exec} from "child_process";
-import {ENTRY_PATH, DIST_PATH, ROOT_PATH, SRC_PATH, TS_CONFIG_PATH} from "./paths";
+import {ANALYZE_PATH, DIST_PATH, SRC_PATH, TS_CONFIG_PATH} from "./paths";
 import esbuild from 'esbuild';
 import path from "path";
 
 import {glob} from "glob";
 import fs from "fs-extra";
 import escapeStringRegexp from 'escape-string-regexp';
+import analyzeFactory from "./configs/webpack.analyze.config";
 
 const args = yargs(hideBin(process.argv))
     .option('env', {
@@ -37,6 +37,32 @@ const args = yargs(hideBin(process.argv))
 
 
 type EsBuildOptions = Parameters<typeof esbuild.build>[0];
+
+const runBundleAnalyzer = async (env: string) => {
+    const compiler = webpack(analyzeFactory({env}));
+
+    await new Promise<void>((resolve, reject) => {
+        compiler.run((err, stats) => {
+            compiler.close((closeErr) => {
+                if (err || closeErr) {
+                    reject(err ?? closeErr);
+                    return;
+                }
+
+                if (stats?.hasErrors()) {
+                    reject(new Error(stats.toString({colors: true})));
+                    return;
+                }
+
+                resolve();
+            });
+        });
+    });
+
+    console.log(`✔ bundle analyzer report: ${path.join(ANALYZE_PATH, 'report.html')}`);
+    console.log(`✔ bundle analyzer stats: ${path.join(ANALYZE_PATH, 'stats.json')}`);
+};
+
 (async function (){
     const {watch, env, analyze} = await args;
     const ESOutDir = DIST_PATH + '/es';
@@ -105,6 +131,10 @@ type EsBuildOptions = Parameters<typeof esbuild.build>[0];
         await Promise.all(processes);
 
         console.log(`✔ esbuild built: ${performance.now() - start}ms`)
+
+        if (analyze) {
+            await runBundleAnalyzer(env);
+        }
 
     } catch (e) {
         console.log('🤡 esbuild error:', e);
