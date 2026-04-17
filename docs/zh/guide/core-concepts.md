@@ -91,23 +91,6 @@ modalAPI.current?.open();
 
 这对 lazy UI、延迟挂载区域和条件渲染都很实用。
 
-## 多实例
-
-当同一个 API 名需要被多个组件同时注册时，设置 `isMulti: true`。
-
-```tsx
-const bridge = createBridge<{
-  notification: {
-    id: string;
-    show: (message: string) => void;
-  };
-}>()({
-  notification: { isMulti: true }
-});
-```
-
-这时 `useAPI()` 返回的是一组 refs。
-
 ## onInit
 
 你也可以用 `onInit` 在 API 首次可用时执行逻辑。

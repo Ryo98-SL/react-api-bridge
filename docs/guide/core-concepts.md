@@ -91,23 +91,6 @@ modalAPI.current?.open();
 
 This makes the library especially useful for lazy UI regions and deferred rendering.
 
-## Multi Instance
-
-Set `isMulti: true` when many components should register under the same API name.
-
-```tsx
-const bridge = createBridge<{
-  notification: {
-    id: string;
-    show: (message: string) => void;
-  };
-}>()({
-  notification: { isMulti: true }
-});
-```
-
-Now `useAPI()` returns a collection of refs for that API key.
-
 ## onInit
 
 You can react when an API becomes available with the `onInit` option.
