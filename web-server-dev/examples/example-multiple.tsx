@@ -1,4 +1,4 @@
-import {createBridge, getBridgeAPI, createBoundary, getBridgeAPIAsync, useAPI, useRegister, useTools, useBoundaryPayload, useBoundaryContext, useBoundaryRef, useUpperAPI, useUpperBoundaryPayload} from "../../dist/lib/index";
+import {createBridge, getBridgeAPI, createBoundary, getBridgeAPIAsync, useAPI, useRegister, useTools, useBoundaryPayload, useBoundaryContext, useBoundaryRef, useUpperAPI, useUpperBoundaryPayload} from "../../dist/es/index.js";
 
 import {useEffect, useId, useRef, useState} from "react";
 
@@ -274,7 +274,6 @@ const EMBridge = createBridge<
 });
 
 console.log(EMBridge);
-
 
 
 

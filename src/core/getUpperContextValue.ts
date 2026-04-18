@@ -7,22 +7,28 @@ export function getUpperContextValue<A extends APIParams, O extends BridgeAPIOpt
     shouldForwardYield?: UpperOptions<A, O, P>['shouldForwardYield']
 ) {
     let parent = start.parent;
-    while (true) {
-        if (!parent) break;
-        if (!shouldForwardYield) break;
 
-        const apiNames = Object.keys(parent.bridge) as (keyof A)[];
+    if (!parent || !shouldForwardYield) {
+        return parent;
+    }
 
-        const allAPI = apiNames.reduce((all, apiName) => {
-            const bridge = parent!.bridge[apiName]!;
-            all[apiName] = bridge.apiNList
-            return all;
-        }, {} as AllAPI<A, O>)
+    while (parent) {
+        const allAPI = {} as AllAPI<A, O>;
+        for (const apiName in parent.bridge) {
+            const apiDesc = parent.bridge[apiName as keyof A];
+            if (apiDesc) {
+                allAPI[apiName as keyof A] = apiDesc.apiNList;
+            }
+        }
+
         if (!!shouldForwardYield({
             payload: parent.payload,
             parent: parent.parent,
             allAPI
-        })) break;
+        })) {
+            break;
+        }
+
         parent = parent.parent;
     }
 

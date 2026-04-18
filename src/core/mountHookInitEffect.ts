@@ -1,14 +1,15 @@
 import {getIsMulti} from "./getIsMulti";
 import {RefObject} from "react";
-import {appendToMappedValue} from "../utils/appendToMappedValue";
 import {tryInvoke} from "../utils/tryInvoke";
 import {OnInit, OnMultiInit, ResolveInit} from "../types/init";
 import {BridgeAPIOptions} from "../types/options";
 import {APIParams, ResolveAPI} from "../types/api";
 import {InitializedOnInitMap} from "../types/maps";
+import {HookId} from "../types/tools";
+import {appendToMappedSet} from "../utils/mappedSet";
 
 export function mountHookInitEffect<A extends APIParams, N extends keyof A, O extends BridgeAPIOptions<A>, ANL extends ResolveAPI<A, O, N>>
-(name: N, onInit: ResolveInit<A, O, N> | undefined, apiNList: ANL, hookId: any, bridgeOptions: O | undefined, initializedOnInitMap: InitializedOnInitMap<A>) {
+(name: N, onInit: ResolveInit<A, O, N> | undefined, apiNList: ANL, hookId: HookId, bridgeOptions: O | undefined, initializedOnInitMap: InitializedOnInitMap<A>, touchedRefs: Set<RefObject<A[keyof A]>>) {
     if (!onInit) return;
     const isMulti = getIsMulti<A, N>(name, bridgeOptions) ?? false;
     const involvedApiList: RefObject<A[N]>[] = [];
@@ -43,12 +44,12 @@ export function mountHookInitEffect<A extends APIParams, N extends keyof A, O ex
 
     let clearFns: any[] = [];
 
-    if (involvedApiList.some((apiRef) => !initializedOnInitMap.get(apiRef)?.includes(hookId))) {
+    if (involvedApiList.some((apiRef) => !initializedOnInitMap.get(apiRef)?.has(hookId))) {
         clearFns.push(
             deferFn?.(),
             ...involvedApiList.map((apiRef) => {
-                // marked as  initialized, prevent duplicate invocation
-                return appendToMappedValue(initializedOnInitMap, apiRef, hookId);
+                touchedRefs.add(apiRef as RefObject<A[keyof A]>);
+                return appendToMappedSet(initializedOnInitMap, apiRef as RefObject<A[keyof A]>, hookId);
             })
         )
     }

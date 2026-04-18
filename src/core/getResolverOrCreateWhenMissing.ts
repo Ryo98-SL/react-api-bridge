@@ -2,43 +2,29 @@ import {BoundaryContextValue} from "../types/boundary";
 import {BridgeAPIOptions} from "../types/options";
 import {ApiNList, APIParams} from "../types/api";
 import {BridgeResolver} from "../types/bridge";
-import {PendingResolverMap} from "../types/maps";
+import {PendingResolverBucket, PendingResolverMap} from "../types/maps";
 
 export function getResolverOrCreateWhenMissing<A extends APIParams, N extends keyof A, O extends BridgeAPIOptions<A>, P>
 (apiNList: ApiNList<A, O, N>, contextValue: BoundaryContextValue<A, P, O>, initial: boolean, pendingResolverMap: PendingResolverMap<A, O, P>) {
-
-
-    const _getPendingContextMap =
-        <N extends keyof A, >
-    (_apiNList: ApiNList<A, O, N>) => {
-        return pendingResolverMap.get(_apiNList) as Map<BoundaryContextValue<A, P, O>, BridgeResolver<A, O, N>[]> | undefined;
-    }
-
-    const _setPendingContextMap =
-        <N extends keyof A, >
-        (_apiNList: ApiNList<A, O, keyof A>, map: Map<BoundaryContextValue<A, P, O>, BridgeResolver<A, O, N>[]>) => {
-        // @ts-ignore
-        return pendingResolverMap.set(_apiNList, map);
-    }
-
-
-    let contextValueMap = _getPendingContextMap(apiNList);
+    let contextValueMap = pendingResolverMap.get(apiNList) as Map<BoundaryContextValue<A, P, O>, PendingResolverBucket<A, O, N>> | undefined;
 
     if (!contextValueMap) {
-        contextValueMap = new Map<BoundaryContextValue<A, P, O>, BridgeResolver<A, O, N>[]>();
-        _setPendingContextMap(apiNList, contextValueMap);
+        contextValueMap = new Map<BoundaryContextValue<A, P, O>, PendingResolverBucket<A, O, N>>();
+        pendingResolverMap.set(apiNList, contextValueMap as unknown as Map<BoundaryContextValue<A, P, O>, PendingResolverBucket<A, O, keyof A>>);
     }
 
-    let resolvers = contextValueMap.get(contextValue);
+    let bucket = contextValueMap.get(contextValue);
 
-    if (!resolvers) {
-        resolvers = [];
-        contextValueMap.set(contextValue, resolvers);
+    if (!bucket) {
+        bucket = {
+            waiters: new Set<BridgeResolver<A, O, N>>()
+        };
+        contextValueMap.set(contextValue, bucket);
     }
 
-    let resolver = resolvers.find(r => r.initial);
+    let resolver = initial ? bucket.initialResolver : undefined;
 
-    if (!resolver || !initial) {
+    if (!resolver) {
         let outerResolve: (_apiNList: typeof apiNList) => void;
         const newPromise = new Promise<typeof apiNList>(resolve => {
             outerResolve = resolve;
@@ -50,13 +36,17 @@ export function getResolverOrCreateWhenMissing<A extends APIParams, N extends ke
             resolve: outerResolve!
         }
 
-        resolvers.push(resolver);
+        if (initial) {
+            bucket.initialResolver = resolver;
+        } else {
+            bucket.waiters.add(resolver);
+        }
     }
 
 
     return {
         resolver,
         contextValueMap,
-        resolvers,
+        bucket,
     };
 }

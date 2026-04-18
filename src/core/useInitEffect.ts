@@ -1,13 +1,13 @@
 import {useHookId} from "../utils/useHookId";
-import {useEffect} from "react";
-import {appendToMappedValue} from "../utils/appendToMappedValue";
-import {removeArrayElement} from "../utils/removeArrayElement";
+import {useEffect, useRef} from "react";
 import {mountHookInitEffect} from "./mountHookInitEffect";
 import {BoundaryContextValue} from "../types/boundary";
 import {ResolveInit} from "../types/init";
 import {BridgeAPIOptions} from "../types/options";
 import {APIParams, ResolveAPI} from "../types/api";
-import {CacheInitCbMap, InitializedOnInitMap} from "../types/maps";
+import {CacheInitCbMap, CachedInitCallback, InitializedOnInitMap} from "../types/maps";
+import {RefObject} from "react";
+import {removeFromMappedSet} from "../utils/mappedSet";
 
 
 export function useInitEffect<
@@ -26,39 +26,44 @@ export function useInitEffect<
     initializedOnInitMap: InitializedOnInitMap<A>,
 ) {
     const hookId = useHookId();
+    const callbackInfoRef = useRef<CachedInitCallback<A> | undefined>(undefined);
 
     useEffect(() => {
         if (!onInit) return;
-        // cache onInit associated with hookId, then it will be invoked subsequently.
-        const removeCache = appendToMappedValue(cacheInitCbMap, apiNList, {onInit, hookId});
-        const clearInitEffect = mountHookInitEffect(name, onInit, apiNList, hookId, bridgeOptions, initializedOnInitMap);
+        let cacheCbs = cacheInitCbMap.get(apiNList);
+        if (!cacheCbs) {
+            cacheCbs = new Map();
+            cacheInitCbMap.set(apiNList, cacheCbs);
+        }
+
+        const callbackInfo: CachedInitCallback<A> = {
+            onInit,
+            touchedRefs: new Set<RefObject<A[keyof A]>>()
+        };
+        callbackInfoRef.current = callbackInfo;
+        cacheCbs.set(hookId, callbackInfo);
+
+        const clearInitEffect = mountHookInitEffect(name, onInit, apiNList, hookId, bridgeOptions, initializedOnInitMap, callbackInfo.touchedRefs);
 
         return () => {
-            removeCache();
+            cacheCbs.delete(hookId);
+            if (cacheCbs.size === 0) {
+                cacheInitCbMap.delete(apiNList);
+            }
             clearInitEffect?.()
-        }
+            callbackInfo.touchedRefs.forEach((apiRef) => {
+                removeFromMappedSet(initializedOnInitMap, apiRef, hookId);
+            });
+            callbackInfo.touchedRefs.clear();
+            callbackInfoRef.current = undefined;
+        };
     }, []);
 
     // update onInit callback
     useEffect(() => {
-        if (!onInit) return;
-        const cacheCbs = cacheInitCbMap.get(apiNList);
-        cacheCbs?.forEach((couple) => {
-            if (couple.hookId === hookId) {
-                couple.onInit = onInit;
-            }
-        });
+        if (!onInit || !callbackInfoRef.current) return;
+        callbackInfoRef.current.onInit = onInit;
     }, [onInit]);
-
-    // remove callback when unmount
-    useEffect(() => {
-        return () => {
-            initializedOnInitMap.forEach((arr, key) => {
-                removeArrayElement(arr, hookId);
-            });
-        }
-    }, []);
 }
-
 
 
