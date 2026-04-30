@@ -68,11 +68,11 @@ export function OpenModalButton() {
 }
 ```
 
-到这里，你其实已经掌握了这个库的大多数常见用法。后面这些内容主要是在补充边界场景：如果同一个 API key 被多个 `useRegister()` 同时注册，默认会互相覆盖，最后一次更新的 `useRegister()` 会胜出；如果你希望它们不要互相覆盖，而是同时保留多个实例，可以继续看后面的「多实例」部分。
+到这里，你其实已经掌握了这个库的大多数常见用法。后面这些内容主要是在补充边界场景：如果同一个 API key 被多个 `useRegister()` 同时注册，默认行为是**第一个挂载的组件占有所有权**，后续来自其他组件的 `useRegister()` 不会再覆盖它，而是打印一条 `console.warn`；如果你希望它们能在同一个 key 上同时保留多个实例，可以继续看后面的「多实例」部分。
 
 ## 加上 Boundary
 
-大多数情况下，你其实不需要 Boundary。不加 Boundary 时，所有 API 都会注册到共享的全局作用域里；只有当你需要局部作用域隔离、避免不同子树里的 API 彼此覆盖时，再加上 Boundary。Boundary 会创建局部 API 作用域，这也是它比普通 `ref` 更有价值的地方。
+大多数情况下，你其实不需要 Boundary。不加 Boundary 时，所有 API 都会注册到共享的全局作用域里；只有当你需要局部作用域隔离、避免不同子树里的 API 在同一个 key 上互相冲突（否则会触发上面提到的「先注册者占有」warning）时，再加上 Boundary。Boundary 会创建局部 API 作用域，这也是它比普通 `ref` 更有价值的地方。
 
 ```tsx
 import { createBoundary } from '@ryo-98/react-api-bridge';
@@ -120,9 +120,9 @@ export async function openLater() {
 
 ## 多实例
 
-如果同一个 API key 会被多个组件同时注册，默认行为是互相覆盖，最后一次更新的 `useRegister()` 会胜出。
+如果同一个 API key 会被多个组件同时注册，默认行为是**先注册者占有**：第一个挂载的 `useRegister()` 拿到该 key 的所有权，之后其他组件的 `useRegister()` 不会再覆盖它，而是会打印一条 `console.warn`，提示注册被忽略。所有者组件卸载时，所有权会释放，之后再挂载的组件可以重新认领该 key。
 
-当你希望它们并存，而不是互相覆盖时，可以在创建 bridge 时把这个 key 标记为 `isMulti: true`。
+当你希望多个组件能在同一个 key 上并存，而不是触发上面的 warning 时，可以在创建 bridge 时把这个 key 标记为 `isMulti: true`。
 
 ```tsx
 const bridge = createBridge<{

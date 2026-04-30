@@ -68,11 +68,11 @@ export function OpenModalButton() {
 }
 ```
 
-At this point, you already know enough to cover most real-world use cases with this library. The remaining sections are mostly about edge cases: if multiple `useRegister()` calls register the same API key, they overwrite each other by default, and the most recently updated `useRegister()` wins. If you want to keep multiple APIs instead of overwriting them, jump to the "Multi Instance" section below.
+At this point, you already know enough to cover most real-world use cases with this library. The remaining sections are mostly about edge cases: if multiple `useRegister()` calls register the same API key, the **first one to mount becomes the owner** and any later `useRegister()` on that same key is ignored with a `console.warn` instead of silently overriding it. If you want them to coexist as multiple APIs on the same key, jump to the "Multi Instance" section below.
 
 ## Add A Boundary
 
-In most cases, you do not need a Boundary. Without one, APIs are registered into the shared global scope. Add a Boundary only when you need local scope isolation, such as preventing APIs from different subtrees from overwriting each other. Boundaries create local API scope, which is where the library becomes more useful than plain refs.
+In most cases, you do not need a Boundary. Without one, APIs are registered into the shared global scope. Add a Boundary only when you need local scope isolation, such as preventing APIs from different subtrees from colliding on the same key (which would otherwise trigger the first-registered-wins warning described above). Boundaries create local API scope, which is where the library becomes more useful than plain refs.
 
 ```tsx
 import { createBoundary } from '@ryo-98/react-api-bridge';
@@ -120,9 +120,9 @@ export async function openLater() {
 
 ## Multi Instance
 
-If multiple components register the same API key at the same time, the default behavior is overwrite, and the most recently updated `useRegister()` wins.
+If multiple components register the same API key at the same time, the default behavior is **first-registered wins**: the first `useRegister()` to mount takes ownership of that key, and any later `useRegister()` from a different component on the same key is ignored — a `console.warn` is printed instead of silently overriding the existing API. Ownership is released when the owner component unmounts, so the next component to mount can claim it.
 
-If you want them to coexist instead of overwriting each other, mark that key with `isMulti: true` when creating the bridge.
+If you want them to coexist on the same key instead, mark that key with `isMulti: true` when creating the bridge.
 
 ```tsx
 const bridge = createBridge<{
