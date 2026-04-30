@@ -1,6 +1,6 @@
-import {BoundaryContextValue} from "../types/boundary";
-import {AllAPI, BridgeAPIOptions, UpperOptions} from "../types/options";
-import {APIParams} from "../types/api";
+import {BoundaryContextValue} from "../types/boundary.js";
+import {AllAPI, BridgeAPIOptions, UpperOptions} from "../types/options.js";
+import {APIParams} from "../types/api.js";
 
 export function getUpperContextValue<A extends APIParams, O extends BridgeAPIOptions<A>, P>(
     start: BoundaryContextValue<A, P, O>,

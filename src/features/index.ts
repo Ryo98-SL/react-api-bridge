@@ -1,20 +1,20 @@
 
 
 // Components
-export { default as createBoundary } from "./components/Boundary";
+export { default as createBoundary } from "./components/Boundary.js";
 
 
 // Hooks
-export { useAPI } from "./hooks/useAPI";
-export { useTools } from "./hooks/useTools";
-export { useRegister } from "./hooks/useRegister";
-export { useBoundaryContext } from "./hooks/useBoundaryContext";
-export { useBoundaryPayload } from "./hooks/useBoundaryPayload";
-export { useBoundaryRef } from "./hooks/useBridgeRef";
-export { useUpperAPI } from "./hooks/useUpperAPI";
-export { useUpperBoundaryPayload } from "./hooks/useUpperBoundaryPayload";
+export { useAPI } from "./hooks/useAPI.js";
+export { useTools } from "./hooks/useTools.js";
+export { useRegister } from "./hooks/useRegister.js";
+export { useBoundaryContext } from "./hooks/useBoundaryContext.js";
+export { useBoundaryPayload } from "./hooks/useBoundaryPayload.js";
+export { useBoundaryRef } from "./hooks/useBridgeRef.js";
+export { useUpperAPI } from "./hooks/useUpperAPI.js";
+export { useUpperBoundaryPayload } from "./hooks/useUpperBoundaryPayload.js";
 
 
 // Methods
-export { getBridgeAPI } from "./methods/getBridgeAPI";
-export { getBridgeAPIAsync } from "./methods/getBridgeAPIAsync";
+export { getBridgeAPI } from "./methods/getBridgeAPI.js";
+export { getBridgeAPIAsync } from "./methods/getBridgeAPIAsync.js";

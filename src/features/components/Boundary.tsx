@@ -1,9 +1,9 @@
 import React, {forwardRef, PropsWithChildren, useContext, useImperativeHandle, useMemo} from "react";
-import {getApiDesc} from "../../core";
-import {BoundaryAPI, BoundaryContextValue, BoundaryProps} from "../../types/boundary";
-import {BridgeAPIOptions} from "../../types/options";
-import {APIParams} from "../../types/api";
-import {BridgeRegistry, ReactAPIBridge} from "../../types/bridge";
+import {getApiDesc} from "../../core/index.js";
+import {BoundaryAPI, BoundaryContextValue, BoundaryProps} from "../../types/boundary.js";
+import {BridgeAPIOptions} from "../../types/options.js";
+import {APIParams} from "../../types/api.js";
+import {BridgeRegistry, ReactAPIBridge} from "../../types/bridge.js";
 
 export default function createBoundary<A extends APIParams,P, O extends BridgeAPIOptions<A>>
 (

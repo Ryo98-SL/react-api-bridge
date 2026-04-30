@@ -1,13 +1,13 @@
-import {useHookId} from "../utils/useHookId";
+import {useHookId} from "../utils/useHookId.js";
 import {useEffect, useRef} from "react";
-import {mountHookInitEffect} from "./mountHookInitEffect";
-import {BoundaryContextValue} from "../types/boundary";
-import {ResolveInit} from "../types/init";
-import {BridgeAPIOptions} from "../types/options";
-import {APIParams, ResolveAPI} from "../types/api";
-import {CacheInitCbMap, CachedInitCallback, InitializedOnInitMap} from "../types/maps";
+import {mountHookInitEffect} from "./mountHookInitEffect.js";
+import {BoundaryContextValue} from "../types/boundary.js";
+import {ResolveInit} from "../types/init.js";
+import {BridgeAPIOptions} from "../types/options.js";
+import {APIParams, ResolveAPI} from "../types/api.js";
+import {CacheInitCbMap, CachedInitCallback, InitializedOnInitMap} from "../types/maps.js";
 import {RefObject} from "react";
-import {removeFromMappedSet} from "../utils/mappedSet";
+import {removeFromMappedSet} from "../utils/mappedSet.js";
 
 
 export function useInitEffect<

@@ -1,7 +1,7 @@
-import {genOutput} from "./core/genOutput";
-import {BridgeAPIOptions} from "./types/options";
-import {APIParams} from "./types/api";
-import {PayloadParameter} from "./types/tools";
+import {genOutput} from "./core/genOutput.js";
+import {BridgeAPIOptions} from "./types/options.js";
+import {APIParams} from "./types/api.js";
+import {PayloadParameter} from "./types/tools.js";
 
 const createBridge = <
     A extends APIParams,

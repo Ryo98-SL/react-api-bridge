@@ -1,9 +1,9 @@
 import {createContext} from "react";
-import {BoundaryContextValue} from "../types/boundary";
-import {BridgeAPIOptions} from "../types/options";
-import {ApiNList, APIParams} from "../types/api";
-import {CacheInitCbMap, InitializedOnInitMap, PendingResolverMap} from "../types/maps";
-import {BridgeResolver, ReactAPIBridge} from "../types/bridge";
+import {BoundaryContextValue} from "../types/boundary.js";
+import {BridgeAPIOptions} from "../types/options.js";
+import {ApiNList, APIParams} from "../types/api.js";
+import {CacheInitCbMap, InitializedOnInitMap, PendingResolverMap} from "../types/maps.js";
+import {BridgeResolver, ReactAPIBridge} from "../types/bridge.js";
 
 export function genOutput<A extends APIParams, P = any, const O extends BridgeAPIOptions<A> = BridgeAPIOptions<A>>
 (payload: P, bridgeOptions?: O): ReactAPIBridge<A, P, O> {

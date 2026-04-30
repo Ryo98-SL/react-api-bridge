@@ -1,13 +1,20 @@
-import {ApiNList, APIParams, ResolveAPI} from "./api";
-import {BridgeAPIOptions} from "./options";
-import {BoundaryContextValue} from "./boundary";
+import {ApiNList, APIParams, ResolveAPI} from "./api.js";
+import {BridgeAPIOptions} from "./options.js";
+import {BoundaryContextValue} from "./boundary.js";
 import React from "react";
-import {CacheInitCbMap, InitializedOnInitMap, PendingResolverMap} from "./maps";
+import {CacheInitCbMap, InitializedOnInitMap, PendingResolverMap} from "./maps.js";
+import {HookId} from "./tools.js";
 
 export type BridgeRegistry<A extends APIParams, O extends BridgeAPIOptions<A> = BridgeAPIOptions<A>> = {
     [N in keyof A]?: {
         options?: O[N],
         apiNList?: ResolveAPI<A, O, N>,
+        /**
+         * The hook id of the first useRegister that took ownership of this field
+         * when it is in non-multi mode. Used to prevent later useRegister hooks
+         * from silently overriding the API of an existing owner.
+         */
+        ownerId?: HookId,
     }
 }
 

@@ -1,4 +1,4 @@
-import {useFinalContextValue, getApiDesc, getUpperApiDesc, getUpperContextValue, getResolverOrCreateWhenMissing} from "../../core";
+import {useFinalContextValue, getApiDesc, getUpperApiDesc, getUpperContextValue, getResolverOrCreateWhenMissing} from "../../core/index.js";
 import {useCallback} from "react";
 import {
     BaseOptions,
@@ -6,9 +6,9 @@ import {
     GetAPIAsyncOptions,
     GetUpperAPIOptions,
     UpperOptions
-} from "../../types/options";
-import {APIParams} from "../../types/api";
-import {ReactAPIBridge} from "../../types/bridge";
+} from "../../types/options.js";
+import {APIParams} from "../../types/api.js";
+import {ReactAPIBridge} from "../../types/bridge.js";
 
 export function useTools<A extends APIParams, P, O extends BridgeAPIOptions<A>>
 (apiBridge: ReactAPIBridge<A, P, O>, hookOptions?: BaseOptions<A, O, P>) {

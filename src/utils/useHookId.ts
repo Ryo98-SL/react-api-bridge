@@ -1,7 +1,7 @@
 import {useMemo} from "react";
-import {genHookId} from "./genHookId";
+import {genHookId} from "./genHookId.js";
 
-import {HookId} from "../types/tools";
+import {HookId} from "../types/tools.js";
 
 export function useHookId(): HookId {
     return useMemo(() => {

@@ -1,8 +1,8 @@
-import {getUpperContextValue} from "./getUpperContextValue";
-import {getApiDesc} from "./getApiDesc";
-import {BoundaryContextValue} from "../types/boundary";
-import {BridgeAPIOptions, GetUpperAPIOptions} from "../types/options";
-import {APIParams} from "../types/api";
+import {getUpperContextValue} from "./getUpperContextValue.js";
+import {getApiDesc} from "./getApiDesc.js";
+import {BoundaryContextValue} from "../types/boundary.js";
+import {BridgeAPIOptions, GetUpperAPIOptions} from "../types/options.js";
+import {APIParams} from "../types/api.js";
 
 export function getUpperApiDesc<A extends APIParams, N extends keyof A, O extends BridgeAPIOptions<A>, P>(contextValue: BoundaryContextValue<A, P, O>,
                                                                            _name: N,

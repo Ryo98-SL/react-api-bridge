@@ -1,7 +1,7 @@
-import {getApiDesc, getResolverOrCreateWhenMissing} from "../../core";
-import {BridgeAPIOptions, GetAPIAsyncOptions} from "../../types/options";
-import {APIParams} from "../../types/api";
-import {ReactAPIBridge} from "../../types/bridge";
+import {getApiDesc, getResolverOrCreateWhenMissing} from "../../core/index.js";
+import {BridgeAPIOptions, GetAPIAsyncOptions} from "../../types/options.js";
+import {APIParams} from "../../types/api.js";
+import {ReactAPIBridge} from "../../types/bridge.js";
 
 export function getBridgeAPIAsync<A extends APIParams, N extends keyof A, O extends BridgeAPIOptions<A>, P>
 (apiBridge: ReactAPIBridge<A, P, O>, name: N, options?: GetAPIAsyncOptions<A, O, P>, bridgeOptions?: O) {

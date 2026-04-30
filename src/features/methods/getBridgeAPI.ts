@@ -1,8 +1,8 @@
-import {getApiDesc} from "../../core";
-import {BoundaryContextValue} from "../../types/boundary";
-import {BaseOptions, BridgeAPIOptions} from "../../types/options";
-import {APIParams} from "../../types/api";
-import {ReactAPIBridge} from "../../types/bridge";
+import {getApiDesc} from "../../core/index.js";
+import {BoundaryContextValue} from "../../types/boundary.js";
+import {BaseOptions, BridgeAPIOptions} from "../../types/options.js";
+import {APIParams} from "../../types/api.js";
+import {ReactAPIBridge} from "../../types/bridge.js";
 
 export function getBridgeAPI<A extends APIParams, N extends keyof A, O extends BridgeAPIOptions<A>, P>
 (apiBridge: ReactAPIBridge<A, P, O>, name: N, baseOptions?: BaseOptions<A, O, P>) {

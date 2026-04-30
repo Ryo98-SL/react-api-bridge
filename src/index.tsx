@@ -1,5 +1,5 @@
 
 
-export { default as createBridge} from "./bridge";
+export { default as createBridge} from "./bridge.js";
 
-export * from "./features"
+export * from "./features/index.js"

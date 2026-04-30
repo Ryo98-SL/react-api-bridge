@@ -1,7 +1,7 @@
-import {ResolveInit} from "./init";
-import {BoundaryContextValue} from "./boundary";
+import {ResolveInit} from "./init.js";
+import {BoundaryContextValue} from "./boundary.js";
 
-import {APIParams, ResolveAPI} from "./api";
+import {APIParams, ResolveAPI} from "./api.js";
 
 export interface APIOptions {
     isMulti?: boolean;

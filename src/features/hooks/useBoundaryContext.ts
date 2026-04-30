@@ -1,9 +1,9 @@
 import {useContext, useMemo} from "react";
-import {BridgeAPIOptions} from "../../types/options";
-import {APIParams} from "../../types/api";
-import {PayloadParameter} from "../../types/tools";
-import {ReactAPIBridge} from "../../types/bridge";
-import {BoundaryContextValue} from "../../types/boundary";
+import {BridgeAPIOptions} from "../../types/options.js";
+import {APIParams} from "../../types/api.js";
+import {PayloadParameter} from "../../types/tools.js";
+import {ReactAPIBridge} from "../../types/bridge.js";
+import {BoundaryContextValue} from "../../types/boundary.js";
 
 
 export function useBoundaryContext<A extends APIParams, O extends BridgeAPIOptions<A>, P>

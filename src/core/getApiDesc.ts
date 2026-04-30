@@ -1,8 +1,8 @@
-import {getIsMulti} from "./getIsMulti";
+import {getIsMulti} from "./getIsMulti.js";
 import {createRef, RefObject} from "react";
-import {BridgeAPIOptions} from "../types/options";
-import {ApiNList, APIParams} from "../types/api";
-import {BridgeRegistry} from "../types/bridge";
+import {BridgeAPIOptions} from "../types/options.js";
+import {ApiNList, APIParams} from "../types/api.js";
+import {BridgeRegistry} from "../types/bridge.js";
 
 export const getApiDesc = <A extends APIParams, N extends keyof A, O extends BridgeAPIOptions<A>>
 (name: N, source: BridgeRegistry<A, O>, bridgeOptions: O | undefined) => {

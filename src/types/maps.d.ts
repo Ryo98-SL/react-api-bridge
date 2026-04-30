@@ -1,9 +1,9 @@
-import {ApiNList, APIParams} from "./api";
+import {ApiNList, APIParams} from "./api.js";
 import {RefObject} from "react";
-import {HookId} from "./tools";
-import {BridgeAPIOptions} from "./options";
-import {BoundaryContextValue} from "./boundary";
-import {BridgeResolver} from "./bridge";
+import {HookId} from "./tools.js";
+import {BridgeAPIOptions} from "./options.js";
+import {BoundaryContextValue} from "./boundary.js";
+import {BridgeResolver} from "./bridge.js";
 
 export type InitializedOnInitMap<A extends APIParams> = Map<RefObject<A[keyof A]>, Set<HookId>>;
 

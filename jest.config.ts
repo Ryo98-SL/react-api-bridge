@@ -90,7 +90,15 @@ const config: Config = {
   // ],
 
   // A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module
-  // moduleNameMapper: {},
+  //
+  // The library uses NodeNext-style ESM specifiers in source (e.g.
+  // `import "./foo.js"` even though the actual file on disk is `./foo.ts`).
+  // Jest's default resolver doesn't follow this convention, so we strip the
+  // trailing `.js` from relative specifiers and let Jest fall back to its
+  // normal extension resolution to find the `.ts`/`.tsx` source.
+  moduleNameMapper: {
+    '^(\\.{1,2}/.*)\\.js$': '$1',
+  },
 
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
   // modulePathIgnorePatterns: [],

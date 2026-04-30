@@ -1,6 +1,6 @@
 import {RefObject} from "react";
-import {BridgeAPIOptions} from "./options";
-import {APIParams, ConditionByIsMulti} from "./api";
+import {BridgeAPIOptions} from "./options.js";
+import {APIParams, ConditionByIsMulti} from "./api.js";
 
 export type OnInit<A extends APIParams, N extends keyof A> = (api: RefObject<A[N]>) => any;
 export type OnMultiInit<A extends APIParams, N extends keyof A> = (api: RefObject<A[N]> | undefined, total: RefObject<A[N]>[]) => any;

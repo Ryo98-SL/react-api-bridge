@@ -1,5 +1,5 @@
 import {RefObject, useEffect, useRef} from "react";
-import {removeArrayElement} from "./removeArrayElement";
+import {removeArrayElement} from "./removeArrayElement.js";
 
 export function useUniqueElementRef<T>(entity: RefObject<T>[] | RefObject<T>) {
     const elRef = useRef<T>(null);

@@ -1,8 +1,8 @@
-import {useFinalContextValue, getUpperApiDesc, useInitEffect} from "../../core";
+import {useFinalContextValue, getUpperApiDesc, useInitEffect} from "../../core/index.js";
 import {useMemo} from "react";
-import {BridgeAPIOptions, GetUpperAPIOptions} from "../../types/options";
-import {APIParams} from "../../types/api";
-import {ReactAPIBridge} from "../../types/bridge";
+import {BridgeAPIOptions, GetUpperAPIOptions} from "../../types/options.js";
+import {APIParams} from "../../types/api.js";
+import {ReactAPIBridge} from "../../types/bridge.js";
 
 function useUpperAPI<A extends APIParams, N extends keyof A, O extends BridgeAPIOptions<A>, P>
 (apiBridge: ReactAPIBridge<A, P, O>, name: N, hookOptions?: GetUpperAPIOptions<A, N, O, P>, bridgeOptions?: O) {

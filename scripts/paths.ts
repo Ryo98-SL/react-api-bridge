@@ -18,6 +18,6 @@ export const SRC_PATH = path.resolve(ROOT_PATH, 'src');
 export const ENTRY_PATH = path.join(SRC_PATH, './index.tsx');
 export const DIST_PATH = path.join(ROOT_PATH, 'dist');
 export const ANALYZE_PATH = path.join(DIST_PATH, 'analyze');
-export const BABEL_CONFIG_PATH = path.join(ROOT_PATH, 'babel.config.js');
+export const BABEL_CONFIG_PATH = path.join(ROOT_PATH, 'babel.config.cjs');
 
 export const TS_CONFIG_PATH = path.join(ROOT_PATH, 'tsconfig.json');

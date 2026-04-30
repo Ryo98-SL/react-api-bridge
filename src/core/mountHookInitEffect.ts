@@ -1,12 +1,12 @@
-import {getIsMulti} from "./getIsMulti";
+import {getIsMulti} from "./getIsMulti.js";
 import {RefObject} from "react";
-import {tryInvoke} from "../utils/tryInvoke";
-import {OnInit, OnMultiInit, ResolveInit} from "../types/init";
-import {BridgeAPIOptions} from "../types/options";
-import {APIParams, ResolveAPI} from "../types/api";
-import {InitializedOnInitMap} from "../types/maps";
-import {HookId} from "../types/tools";
-import {appendToMappedSet} from "../utils/mappedSet";
+import {tryInvoke} from "../utils/tryInvoke.js";
+import {OnInit, OnMultiInit, ResolveInit} from "../types/init.js";
+import {BridgeAPIOptions} from "../types/options.js";
+import {APIParams, ResolveAPI} from "../types/api.js";
+import {InitializedOnInitMap} from "../types/maps.js";
+import {HookId} from "../types/tools.js";
+import {appendToMappedSet} from "../utils/mappedSet.js";
 
 export function mountHookInitEffect<A extends APIParams, N extends keyof A, O extends BridgeAPIOptions<A>, ANL extends ResolveAPI<A, O, N>>
 (name: N, onInit: ResolveInit<A, O, N> | undefined, apiNList: ANL, hookId: HookId, bridgeOptions: O | undefined, initializedOnInitMap: InitializedOnInitMap<A>, touchedRefs: Set<RefObject<A[keyof A]>>) {

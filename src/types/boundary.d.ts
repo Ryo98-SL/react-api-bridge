@@ -1,6 +1,6 @@
-import {BridgeAPIOptions} from "./options";
-import {APIParams, ResolveAPI} from "./api";
-import {BridgeRegistry} from "./bridge";
+import {BridgeAPIOptions} from "./options.js";
+import {APIParams, ResolveAPI} from "./api.js";
+import {BridgeRegistry} from "./bridge.js";
 
 export type BoundaryContextValue<A extends APIParams, P = any, O extends BridgeAPIOptions<A> = BridgeAPIOptions<A>> = {
     bridge: BridgeRegistry<A, O>;

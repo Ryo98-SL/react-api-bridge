@@ -1,4 +1,4 @@
-import {removeArrayElement} from "./removeArrayElement";
+import {removeArrayElement} from "./removeArrayElement.js";
 
 export function appendToMappedValue<K extends object, E>(map: WeakMap<K, E[]>, key: K, element: E) {
     let arr = map.get(key);

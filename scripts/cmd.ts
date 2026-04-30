@@ -38,7 +38,7 @@ const args = yargs(hideBin(process.argv))
 
         buildProcess.stdout?.on('data', (chunk) => {
             console.log(chunk.toString() );
-            if(chunk.match(/^has built/)) {
+            if(chunk.match(/has built/)) {
                 resolve(1)
             }
         });

@@ -1,4 +1,4 @@
-import {APIOptions, BridgeAPIOptions} from "./options";
+import {APIOptions, BridgeAPIOptions} from "./options.js";
 import {RefObject} from "react";
 
 export type MapMulti<O extends BridgeAPIOptions<APIParams>, N extends keyof O> = (NonNullable<O[N] & APIOptions>)['isMulti'];
