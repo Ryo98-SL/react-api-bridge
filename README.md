@@ -30,13 +30,6 @@ without prop drilling or forwarding refs obtained from `forwardRef` through laye
 npm install @ryo-98/react-api-bridge
 ```
 
-## Bundle Analysis
-
-```bash
-npm run build:analyze
-```
-
-This generates a static bundle size report at `dist/analyze/report.html` and the raw stats at `dist/analyze/stats.json`.
 
 ## Its capability
 
