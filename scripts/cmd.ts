@@ -3,6 +3,7 @@ import {hideBin} from "yargs/helpers";
 import '@ungap/with-resolvers';
 import {exec} from "node:child_process";
 import {SCRIPTS_PATH} from "./paths";
+import {runBuild} from "./build";
 
 const args = yargs(hideBin(process.argv))
     .option('env', {
@@ -30,25 +31,8 @@ const args = yargs(hideBin(process.argv))
 (async function () {
         const {watch, serve, env} = await args;
 
-        const buildProcess  = exec(`npx tsx ./build.ts --env ${env} --watch ${watch || serve}`, {
-            cwd: SCRIPTS_PATH,
-        });
+        await runBuild({env, watch: watch || serve});
 
-        const {resolve, reject, promise: buildDone} = Promise.withResolvers()
-
-        buildProcess.stdout?.on('data', (chunk) => {
-            console.log(chunk.toString() );
-            if(chunk.match(/has built/)) {
-                resolve(1)
-            }
-        });
-
-        buildProcess.stdout?.on('error', (err) => {
-            console.error(err.toString());
-            reject(err)
-        });
-
-        await buildDone;
         if(serve) {
             console.log('server start running');
             const serveProcess = exec(`npx tsx ./serve.ts --env ${env}`, {
